@@ -1,0 +1,13 @@
+DOMAIN-SUFFIX,genshinimpact.com
+DOMAIN-SUFFIX,honkaiimpact3.com
+DOMAIN-SUFFIX,honkaistarrail.com
+DOMAIN-SUFFIX,hoyo.link
+DOMAIN-SUFFIX,hoyolab.com
+DOMAIN-SUFFIX,hoyoverse.com
+DOMAIN-SUFFIX,n0vadesktop.com
+DOMAIN-SUFFIX,yuanshen.com
+DOMAIN-SUFFIX,listdl.com
+IP-CIDR,35.75.230.0/24,no-resolve
+IP-CIDR,54.250.142.0/24,no-resolve
+IP-CIDR,35.72.223.0/24,no-resolve
+IP-CIDR,175.41.217.0/24,no-resolve
