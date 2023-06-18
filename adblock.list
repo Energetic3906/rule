@@ -273,6 +273,3 @@ DOMAIN-SUFFIX,zhushou.2345.cn
 DOMAIN-SUFFIX,zz.bdstatic.com
 DOMAIN-SUFFIX,zzy1.quyaoya.com
 IP-CIDR,101.227.200.0/24,no-resolve
-IP-CIDR,91.108.56.140/32,no-resolve
-IP-CIDR,91.108.56.0/22,no-resolve
-IP-CIDR,91.108.56.0/23,no-resolve
