@@ -52,5 +52,8 @@ sudo chmod 644 /root/trojan/fullchain.cer
 # 重新加载 systemd 配置
 sudo systemctl daemon-reload
 
+# 第八步：完成后删除该脚本
+rm $0
+
 # 启用服务
 sudo systemctl enable trojan-go.service
