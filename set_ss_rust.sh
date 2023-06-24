@@ -10,7 +10,6 @@ read -p "请输入选择的编号: " choice
 read -p "请输入 ss-rust 密码: " password
 
 # 设置端口
-server_port=9000
 read -p "请输入 ss-rust 端口: " server_port
 
 # 第三步：创建目录并编辑配置文件
