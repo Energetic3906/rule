@@ -40,6 +40,7 @@ DOMAIN-SUFFIX,api.cupid.iqiyi.com
 DOMAIN-SUFFIX,api.game.letvstore.com
 DOMAIN-SUFFIX,api.itaoxiaoshuo.com
 DOMAIN-SUFFIX,api.mobula.sdk.duapps.com
+DOMAIN-SUFFIX,api.statsig.com
 DOMAIN-SUFFIX,api.sec.miui.com
 DOMAIN-SUFFIX,api.installer.xiaomi.com
 DOMAIN-SUFFIX,api.tuisong.baidu.com
@@ -213,6 +214,7 @@ DOMAIN-SUFFIX,scorecardresearch.com
 DOMAIN-SUFFIX,sdk.api.gamex.mobile.youku.com
 DOMAIN-SUFFIX,sdk.cferw.com
 DOMAIN-SUFFIX,sdkconfig.ad.xiaomi.com
+DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,segment.com
 DOMAIN-SUFFIX,shouji.360.cn
 DOMAIN-SUFFIX,show.re.taobao.com
