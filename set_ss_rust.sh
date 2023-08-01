@@ -28,7 +28,7 @@ if [ $choice -eq 1 ]; then
             "timeout":300,
             "nameserver":"223.5.5.5",
             "mode":"tcp_and_udp",
-            "fast_open": true
+            "fast_open": false
         }
     ]
 }
@@ -45,7 +45,7 @@ else
             "timeout":300,
             "nameserver":"8.8.8.8",
             "mode":"tcp_and_udp",
-            "fast_open": true
+            "fast_open": false
         }
     ]
 }
