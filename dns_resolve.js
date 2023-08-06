@@ -232,12 +232,12 @@ async function resolveServer(p) {
             console.log('↓ res body')
             console.log(body)
             body = $.toObj(body)
-            const status = $.lodash_get(body, 'status')
-            if (status !== 'success') {
-              throw new Error(`${p.server} 请求 ${status} ${$.lodash_get(body, 'message') || '未知错误'}`)
+            const status = $.lodash_get(body, 'Status')
+            if (status !== 0) {
+              throw new Error(`${resolver} ${p.server} 请求 ${resStatus} ${status}`)
             }
-            ip = $.lodash_get(body, 'query')
-
+            const answers = $.lodash_get(body, 'Answer') || []
+            ip = $.lodash_get(answers, `${answers.length-1}.data`)
             console.log('↓ ip')
             console.log(ip)
             if (!isIPV4(ip)) {
