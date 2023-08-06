@@ -237,7 +237,9 @@ async function resolveServer(p) {
               throw new Error(`${resolver} ${p.server} 请求 ${resStatus} ${status}`)
             }
             const answers = $.lodash_get(body, 'Answer') || []
-            ip = $.lodash_get(answers, `${answers.length-1}.data`)
+            console.log('↓ res Answer')
+            console.log(answers)
+            const ip = answers[answers.length - 1].data;
             console.log('↓ ip')
             console.log(ip)
             if (!isIPV4(ip)) {
