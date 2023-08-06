@@ -239,7 +239,7 @@ async function resolveServer(p) {
             const answers = $.lodash_get(body, 'Answer') || []
             console.log('↓ res Answer')
             console.log(answers)
-            const ip = answers[answers.length - 1].data;
+            const ip = answers[answers.length - 1].data
             console.log('↓ ip')
             console.log(ip)
             if (!isIPV4(ip)) {
