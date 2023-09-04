@@ -112,6 +112,7 @@ DOMAIN-SUFFIX,geo.yahoo.com
 DOMAIN-SUFFIX,gg.stargame.com
 DOMAIN-SUFFIX,go-mpulse
 DOMAIN-SUFFIX,go-mpulse.net
+DOMAIN-SUFFIX,go.xxxjmp.com
 DOMAIN-SUFFIX,googleadsserving.cn
 DOMAIN-SUFFIX,growingio.com
 DOMAIN-SUFFIX,hotchat-im.iqiyi.com
@@ -191,6 +192,7 @@ DOMAIN-SUFFIX,pc.da.mgtv.com
 DOMAIN-SUFFIX,pc1.da.mgtv.com
 DOMAIN-SUFFIX,pdown.stat.360safe.com
 DOMAIN-SUFFIX,pemsrv.com
+DOMAIN-SUFFIX,pgdt.ugdtimg.com
 DOMAIN-SUFFIX,pglstatp-toutiao.com
 DOMAIN-SUFFIX,pixel.wp.com
 DOMAIN-SUFFIX,plat.videojj.com
@@ -258,11 +260,14 @@ DOMAIN-SUFFIX,tg.jifen.2345.com
 DOMAIN-SUFFIX,tns.simba.taobao.com
 DOMAIN-SUFFIX,tob-cms.bj.bcebos.com
 DOMAIN-SUFFIX,tongji.meizu.com
+DOMAIN-SUFFIX,topcams.tv
+DOMAIN-SUFFIX,trace.qq.com
 DOMAIN-SUFFIX,track.hujiang.com
 DOMAIN-SUFFIX,track.uc.cn
 DOMAIN-SUFFIX,tracker.appadhoc.com
 DOMAIN-SUFFIX,tracking.miui.com
 DOMAIN-SUFFIX,tuia.cn
+DOMAIN-SUFFIX,ujscdn.com
 DOMAIN-SUFFIX,uop.umeng.com
 DOMAIN-SUFFIX,update.minipage.2345.com
 DOMAIN-SUFFIX,urchin.lstat.youku.com
@@ -272,6 +277,7 @@ DOMAIN-SUFFIX,v1.log.moji.com
 DOMAIN-SUFFIX,v2.da.mgtv.com
 DOMAIN-SUFFIX,va.videojj.com
 DOMAIN-SUFFIX,vcmdiawe.com
+DOMAIN-SUFFIX,video.ktkjmp.com
 DOMAIN-SUFFIX,vqq.admaster.com.cn
 DOMAIN-SUFFIX,vv84.bj.bcebos.com
 DOMAIN-SUFFIX,wan.2345.cn
@@ -297,5 +303,3 @@ DOMAIN-SUFFIX,zhushou.2345.cn
 DOMAIN-SUFFIX,zog.link
 DOMAIN-SUFFIX,zz.bdstatic.com
 DOMAIN-SUFFIX,zzy1.quyaoya.com
-DOMAIN,pgdt.ugdtimg.com
-IP-CIDR,101.227.200.0/24,no-resolve
