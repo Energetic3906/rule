@@ -74,8 +74,8 @@ EOL
 
 # 第七步：执行docker-compose命令
 cd && cd /root/ss-rust
-docker-compose pull
-docker-compose up -d
+docker compose pull
+docker compose up -d
 
 echo "脚本执行完成！"
 
