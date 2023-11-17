@@ -1,3 +1,9 @@
+DOMAIN-SUFFIX,fengkongcloud.com
+DOMAIN-SUFFIX,xhscdn.com
+DOMAIN-SUFFIX,xhscdn.net
+DOMAIN-SUFFIX,xiaohongshu.com
+DOMAIN-SUFFIX,dutils.com
+DOMAIN-SUFFIX,jpush.cn
 IP-CIDR,110.87.104.23/32,no-resolve
 IP-CIDR,111.231.212.29/32,no-resolve
 IP-CIDR,117.28.173.186/32,no-resolve
