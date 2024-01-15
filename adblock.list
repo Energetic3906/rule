@@ -1,11 +1,9 @@
+AND,((DOMAIN-SUFFIX,biliapi.net),(DOMAIN-KEYWORD,pcdn))
 DOMAIN-KEYWORD,analysis
 DOMAIN-KEYWORD,googleads
 DOMAIN-KEYWORD,omgmtaw
 DOMAIN-KEYWORD,usage
 DOMAIN-KEYWORD,zijieapi
-DOMAIN-SUFFIX,mcdn.bilivideo.cn
-DOMAIN-SUFFIX,pcdn.biliapi.net
-DOMAIN-SUFFIX,szbdyd.com
 DOMAIN-SUFFIX,1vag.com
 DOMAIN-SUFFIX,a0.app.xiaomi.com
 DOMAIN-SUFFIX,account.sogou.com
@@ -175,6 +173,7 @@ DOMAIN-SUFFIX,m2.da.mgtv.com
 DOMAIN-SUFFIX,macime.sogou.com
 DOMAIN-SUFFIX,magsrv.com
 DOMAIN-SUFFIX,marketo.com
+DOMAIN-SUFFIX,mcdn.bilivideo.cn
 DOMAIN-SUFFIX,me.videojj.com
 DOMAIN-SUFFIX,metricswpsh.com
 DOMAIN-SUFFIX,mfp.deliver.ifeng.com
@@ -265,6 +264,7 @@ DOMAIN-SUFFIX,stripchat.com
 DOMAIN-SUFFIX,strp.chat
 DOMAIN-SUFFIX,sugar.zhihu.com
 DOMAIN-SUFFIX,sutraf.com
+DOMAIN-SUFFIX,szbdyd.com
 DOMAIN-SUFFIX,t.l.qq.com
 DOMAIN-SUFFIX,talkingdata.com
 DOMAIN-SUFFIX,talkingdata.net
