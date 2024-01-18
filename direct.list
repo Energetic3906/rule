@@ -150,7 +150,6 @@ DOMAIN-SUFFIX,clashroyaleapp.com
 DOMAIN-SUFFIX,classix-unlimited.co.uk
 DOMAIN-SUFFIX,clouddn.com
 DOMAIN-SUFFIX,cloudxns.net
-DOMAIN-SUFFIX,cm.steampowered.com
 DOMAIN-SUFFIX,cmfu.com
 DOMAIN-SUFFIX,cn163.net
 DOMAIN-SUFFIX,cnbeta.com
@@ -477,9 +476,6 @@ DOMAIN-SUFFIX,springsunday.net
 DOMAIN-SUFFIX,sspai.com
 DOMAIN-SUFFIX,startssl.com
 DOMAIN-SUFFIX,staticfile.org
-DOMAIN-SUFFIX,steamchina.com
-DOMAIN-SUFFIX,steamcontent.com
-DOMAIN-SUFFIX,steamusercontent.com
 DOMAIN-SUFFIX,suning.com
 DOMAIN-SUFFIX,symcd.com
 DOMAIN-SUFFIX,synology.com
@@ -621,8 +617,6 @@ DOMAIN-SUFFIX,zte.home
 DOMAIN,analytics.strava.com
 DOMAIN,bdtj.tagtic.cn
 DOMAIN,csgo.wmsj.cn
-DOMAIN,dl.steam.clngaa.com
-DOMAIN,dl.steam.ksyna.com
 DOMAIN,dota2.wmsj.cn
 DOMAIN,errlog.umeng.com
 DOMAIN,fairplay.l.qq.com
@@ -636,11 +630,7 @@ DOMAIN,setmeup.arubanetworks.com
 DOMAIN,st.dl.bscstorage.net
 DOMAIN,st.dl.eccdnx.com
 DOMAIN,st.dl.pinyuncloud.com
-DOMAIN,steampipe.steamcontent.tnkjmec.com
-DOMAIN,steampowered.com.8686c.com
-DOMAIN,steamstatic.com.8686c.com
 DOMAIN,vd.l.qq.com
-DOMAIN,wmsjsteam.com
 DOMAIN,xivanalysis.com
 PROCESS-NAME,com.chinamworld.main
 PROCESS-NAME,com.icbc
