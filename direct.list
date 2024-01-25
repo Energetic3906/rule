@@ -15,7 +15,6 @@ DOMAIN-KEYWORD,torrent
 DOMAIN-KEYWORD,tracker
 DOMAIN-KEYWORD,vpimg
 DOMAIN-KEYWORD,xiami
-DOMAIN-KEYWORD,xiaomi
 DOMAIN-SUFFIX,00cdn.com
 DOMAIN-SUFFIX,10010.com
 DOMAIN-SUFFIX,115.com
@@ -346,7 +345,6 @@ DOMAIN-SUFFIX,mi.com
 DOMAIN-SUFFIX,miaopai.com
 DOMAIN-SUFFIX,migucloud.com
 DOMAIN-SUFFIX,miguvideo.com
-DOMAIN-SUFFIX,miui.com
 DOMAIN-SUFFIX,miwifi.com
 DOMAIN-SUFFIX,mmstat.com
 DOMAIN-SUFFIX,mob.com
@@ -553,9 +551,6 @@ DOMAIN-SUFFIX,xiami.com
 DOMAIN-SUFFIX,xiami.net
 DOMAIN-SUFFIX,xiaojukeji.com
 DOMAIN-SUFFIX,xiaoka.tv
-DOMAIN-SUFFIX,xiaomi.com
-DOMAIN-SUFFIX,xiaomi.net
-DOMAIN-SUFFIX,xiaomicp.com
 DOMAIN-SUFFIX,ximalaya.com
 DOMAIN-SUFFIX,xinhuanet.com
 DOMAIN-SUFFIX,xip.io
