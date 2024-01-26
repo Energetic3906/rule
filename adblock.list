@@ -299,6 +299,7 @@ DOMAIN-SUFFIX,test.zeus.ad.xiaomi.com
 DOMAIN-SUFFIX,tf.360.cn
 DOMAIN-SUFFIX,tg.jifen.2345.com
 DOMAIN-SUFFIX,tmfsdk.m.qq.com
+DOMAIN-SUFFIX,tmfsdktcp.m.qq.com
 DOMAIN-SUFFIX,tns.simba.taobao.com
 DOMAIN-SUFFIX,tob-cms.bj.bcebos.com
 DOMAIN-SUFFIX,tongji.meizu.com
@@ -328,6 +329,7 @@ DOMAIN-SUFFIX,wan.2345.cn
 DOMAIN-SUFFIX,web.da.mgtv.com
 DOMAIN-SUFFIX,webstat.kuwo.cn
 DOMAIN-SUFFIX,wenku-cms.bj.bcebos.com
+DOMAIN-SUFFIX,wifiapi.micloud.xiaomi.net
 DOMAIN-SUFFIX,wpadmngr.com
 DOMAIN-SUFFIX,ws.progrss.yahoo.com
 DOMAIN-SUFFIX,x.da.hunantv.com
