@@ -381,4 +381,3 @@ URL-REGEX,^http:\/\/.+\.byteimg\.com\/ad-app-package
 URL-REGEX,^http:\/\/.+\.byteimg\.com\/web\.business\.image
 USER-AGENT,com.sogou.sogouinput.BaseKeyboard
 USER-AGENT,SogouInput
-USER-AGENT,ttplayer*
