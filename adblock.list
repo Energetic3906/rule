@@ -368,6 +368,7 @@ DOMAIN,tnc3-aliec2.snssdk.com
 DOMAIN,tnc3-alisc1.snssdk.com
 DOMAIN,v6-novelapp.ixigua.com
 IP-CIDR,101.36.166.16/32,no-resolve
+IP-CIDR,124.222.170.76/32,no-resolve
 IP-CIDR,117.71.105.23/32,no-resolve
 IP-CIDR,117.92.229.188/32,no-resolve
 IP-CIDR,180.96.2.114/32,no-resolve
