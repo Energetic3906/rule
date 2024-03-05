@@ -1,16 +1,17 @@
 #!name=AllInOne
-#!desc=最后更新时间 2023-08-26 02:17:09
+#!desc=最后更新时间 2024-03-05 02:17:15
 #!author=blackmatrix7
 #!repo=https://github.com/blackmatrix7/ios_rule_script
+#!category=blackmatrix7
 #!domain=5
 #!url-regex=4
 #!http-request-script=1
-#!http-response-script=24
+#!http-response-script=25
 #!redirect=62
-#!reject=744
-#!mitm=796
+#!reject=682
+#!mitm=752
 #!force-http-engine-hosts=6
-#!total=1642
+#!total=1537
 
 [General]
 force-http-engine-hosts = %APPEND% *.ott.cibntv.net,intl.iqiyi.com,maicai.api.ddxq.mobi,mobileapi-v6.elong.com,weibointl.api.weibo.cn,wmapi.meituan.com
@@ -558,6 +559,9 @@ URL-REGEX,^https?:\/\/www\.zhihu\.com\/api\/v\d+\/brand\/question/\d+/card\?,REJ
 
 
 [Map Local]
+"^http:\/\/.*aastocks\.com\/ad\/" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.txt"
+"^http:\/\/.*babytree\.com/(plough\.do|go_search\/api\/mobile_search_new\/get_multi_search_default_keywords)" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.txt"
+"^http:\/\/m\.meitun\.com\/newapi\/router\/topic\/hometptf\/feedRecommend" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.txt"
 "^https:\/\/3pp\.starbucks\.com\.cn\/wxmem\/index\/banner" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
 "^https:\/\/3pp\.starbucks\.com\.cn\/wxmem\/popup" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
 "^https:\/\/ad\.maoyan\.com\/api\/position\/detail" data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
