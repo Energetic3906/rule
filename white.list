@@ -2,3 +2,4 @@ DOMAIN-SUFFIX,tongji.baidu.com
 DOMAIN-SUFFIX,tongji.baidu.cn
 DOMAIN-SUFFIX,cm.bilibili.com
 PROCESS-NAME,com.tencent.mm
+DOMAIN-SUFFIX,jpush.cn
