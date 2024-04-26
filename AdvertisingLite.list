@@ -1178,6 +1178,8 @@ DOMAIN,ad.wx.com
 DOMAIN,ad.xunkids.com
 DOMAIN,ad.yieldpartners.com
 DOMAIN,ad.zijieapi.com
+DOMAIN,ads5-normal-lf.zijieapi.com
+DOMAIN,ads3-normal-lf.zijieapi.com
 DOMAIN,ad120m.com
 DOMAIN,ad123m.com
 DOMAIN,ad127m.com
@@ -37959,4 +37961,3 @@ IP-CIDR,78.140.131.214/32,no-resolve
 IP-CIDR6,2402:db40:5100:1011::5/128,no-resolve
 URL-REGEX,^https?:\/\/cdn-1rtb\.caiyunapp\.com/creative/.*$
 URL-REGEX,^https?:\/\/goblin\.hupu\.com/[^/]+/[^/]+\/interfaceAd\/
-AND,((USER-AGENT,Frodo*),(DOMAIN,119.29.29.29))
