@@ -6,6 +6,7 @@ DOMAIN-SUFFIX,api.statsig.com
 DOMAIN-SUFFIX,auth0.com
 DOMAIN-SUFFIX,cdn.auth0.com
 DOMAIN-SUFFIX,challenges.cloudflare.com
+DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,chatgpt.livekit.cloud
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,client-api.arkoselabs.com
@@ -29,10 +30,10 @@ DOMAIN-SUFFIX,turn.livekit.cloud
 DOMAIN,browser-intake-datadoghq.com
 DOMAIN,static.cloudflareinsights.com
 IP-ASN,20473,no-resolve
-IP-CIDR,24.199.123.28/32,no-resolve
-IP-CIDR,64.23.132.171/32,no-resolve
 IP-CIDR,104.234.142.0/24,no-resolve
 IP-CIDR,173.249.200.0/24,no-resolve
 IP-CIDR,173.249.207.0/24,no-resolve
+IP-CIDR,24.199.123.28/32,no-resolve
 IP-CIDR,50.114.40.0/24,no-resolve
+IP-CIDR,64.23.132.171/32,no-resolve
 PROCESS-NAME,com.openai.chatgpt
