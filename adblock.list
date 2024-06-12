@@ -1,4 +1,6 @@
 AND,((DOMAIN-SUFFIX,biliapi.net),(DOMAIN-KEYWORD,pcdn))
+PROCESS-NAME,uTools.exe
+PROCESS-NAME,PixPin.exe
 DOMAIN-KEYWORD,analysis
 DOMAIN-KEYWORD,googleads
 DOMAIN-KEYWORD,omgmtaw
