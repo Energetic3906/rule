@@ -10,8 +10,11 @@ DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,chatgpt.livekit.cloud
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,client-api.arkoselabs.com
+DOMAIN-SUFFIX,cloudflare.com
+DOMAIN-SUFFIX,cloudflareinsights.com
 DOMAIN-SUFFIX,events.statsigapi.net
 DOMAIN-SUFFIX,featuregates.org
+DOMAIN-SUFFIX,gravatar.com
 DOMAIN-SUFFIX,host.livekit.cloud
 DOMAIN-SUFFIX,identrust.com
 DOMAIN-SUFFIX,intercom.io
@@ -26,9 +29,10 @@ DOMAIN-SUFFIX,poe.com
 DOMAIN-SUFFIX,segment.io
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,stripe.com
+DOMAIN-SUFFIX,stripe.network
 DOMAIN-SUFFIX,turn.livekit.cloud
+DOMAIN-SUFFIX,wp.com
 DOMAIN,browser-intake-datadoghq.com
-DOMAIN,static.cloudflareinsights.com
 IP-ASN,20473,no-resolve
 IP-CIDR,104.234.142.0/24,no-resolve
 IP-CIDR,173.249.200.0/24,no-resolve
