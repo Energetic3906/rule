@@ -70,7 +70,6 @@ DOMAIN-SUFFIX,c.wcpt.biz.weibo.com
 DOMAIN-SUFFIX,canstrm.com
 DOMAIN-SUFFIX,capndr.com
 DOMAIN-SUFFIX,ccc.sys.miui.com
-DOMAIN-SUFFIX,cdn.cmop.mgtv.com
 DOMAIN-SUFFIX,cdn.zampdsp.com
 DOMAIN-SUFFIX,channel.fanxing.kugou.com
 DOMAIN-SUFFIX,cm.fancyapi.com
@@ -137,7 +136,6 @@ DOMAIN-SUFFIX,image.gentags.com
 DOMAIN-SUFFIX,ime.sogou.com
 DOMAIN-SUFFIX,img.adbox.sina.com.cn
 DOMAIN-SUFFIX,img.amp.ad.sina.com.cn
-DOMAIN-SUFFIX,imgaliyun.da.mgtv.com
 DOMAIN-SUFFIX,imp.optaim.com
 DOMAIN-SUFFIX,ini.update.360safe.com
 DOMAIN-SUFFIX,irs01.com
@@ -172,7 +170,6 @@ DOMAIN-SUFFIX,m.ourlj.com
 DOMAIN-SUFFIX,m.txtxr.com
 DOMAIN-SUFFIX,m.vsxet.com
 DOMAIN-SUFFIX,m.yap.yahoo.com
-DOMAIN-SUFFIX,m2.da.mgtv.com
 DOMAIN-SUFFIX,macime.sogou.com
 DOMAIN-SUFFIX,magsrv.com
 DOMAIN-SUFFIX,marketo.com
@@ -186,9 +183,6 @@ DOMAIN-SUFFIX,miav-cse.avlyun.com
 DOMAIN-SUFFIX,mini.cpc.sogou.com
 DOMAIN-SUFFIX,minipage.2345.cn
 DOMAIN-SUFFIX,miui-fxcse.avlyun.com
-DOMAIN-SUFFIX,miwifi.com
-DOMAIN-SUFFIX,mobile.da.mgtv.com
-DOMAIN-SUFFIX,mobile2.da.mgtv.com
 DOMAIN-SUFFIX,motu.p4p.sina.com.cn
 DOMAIN-SUFFIX,mp4.res.hunantv.com
 DOMAIN-SUFFIX,msg.71.am
@@ -207,8 +201,6 @@ DOMAIN-SUFFIX,p.tencentmind.com
 DOMAIN-SUFFIX,p.vq6nsu.cn
 DOMAIN-SUFFIX,p3p.yahoo.com
 DOMAIN-SUFFIX,partnerads.ysm.yahoo.com
-DOMAIN-SUFFIX,pc.da.mgtv.com
-DOMAIN-SUFFIX,pc1.da.mgtv.com
 DOMAIN-SUFFIX,pdown.stat.360safe.com
 DOMAIN-SUFFIX,pemsrv.com
 DOMAIN-SUFFIX,pgdt.ugdtimg.com
@@ -223,7 +215,6 @@ DOMAIN-SUFFIX,pv.alert.autohome.com.cn
 DOMAIN-SUFFIX,pv.hd.sohu.com
 DOMAIN-SUFFIX,pv.sohu.com
 DOMAIN-SUFFIX,pv.xcar.com.cn
-DOMAIN-SUFFIX,py.da.mgtv.com
 DOMAIN-SUFFIX,qsb.browser.miui.srv
 DOMAIN-SUFFIX,quanliyouxi.cn
 DOMAIN-SUFFIX,quantcount.com
@@ -293,7 +284,6 @@ DOMAIN-SUFFIX,urchin.lstat.youku.com
 DOMAIN-SUFFIX,utrack.hexun.com
 DOMAIN-SUFFIX,v.l.youku.com
 DOMAIN-SUFFIX,v1.log.moji.com
-DOMAIN-SUFFIX,v2.da.mgtv.com
 DOMAIN-SUFFIX,va.videojj.com
 DOMAIN-SUFFIX,vcloud.ks-live.com
 DOMAIN-SUFFIX,vcmdiawe.com
@@ -301,19 +291,16 @@ DOMAIN-SUFFIX,video.ktkjmp.com
 DOMAIN-SUFFIX,vqq.admaster.com.cn
 DOMAIN-SUFFIX,vv84.bj.bcebos.com
 DOMAIN-SUFFIX,wan.2345.cn
-DOMAIN-SUFFIX,web.da.mgtv.com
 DOMAIN-SUFFIX,webstat.kuwo.cn
 DOMAIN-SUFFIX,wenku-cms.bj.bcebos.com
 DOMAIN-SUFFIX,wifiapi.micloud.xiaomi.net
 DOMAIN-SUFFIX,ws.progrss.yahoo.com
 DOMAIN-SUFFIX,x.da.hunantv.com
-DOMAIN-SUFFIX,x.da.mgtv.com
 DOMAIN-SUFFIX,x1.da.hunantv.com
 DOMAIN-SUFFIX,xlmc.sec.miui.com
 DOMAIN-SUFFIX,xpe.cxaerp.com
 DOMAIN-SUFFIX,xs.houyi.baofeng.net
 DOMAIN-SUFFIX,y.da.hunantv.com
-DOMAIN-SUFFIX,y.da.mgtv.com
 DOMAIN-SUFFIX,ybp.yahoo.com
 DOMAIN-SUFFIX,yomeno.xyz
 DOMAIN-SUFFIX,youtube.112.2o7.net
@@ -323,7 +310,6 @@ DOMAIN-SUFFIX,zhushou.2345.cn
 DOMAIN-SUFFIX,zog.link
 DOMAIN-SUFFIX,zz.bdstatic.com
 DOMAIN-SUFFIX,zzy1.quyaoya.com
-DOMAIN,is.snssdk.com
 DOMAIN,sf3-ttcdn-tos.pstatp.com
 IP-CIDR,124.222.170.76/32,no-resolve
 PROCESS-NAME,SogouInput
