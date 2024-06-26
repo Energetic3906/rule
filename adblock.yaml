@@ -308,8 +308,6 @@ payload:
   - DOMAIN-SUFFIX,zog.link
   - DOMAIN-SUFFIX,zz.bdstatic.com
   - DOMAIN-SUFFIX,zzy1.quyaoya.com
-  - DOMAIN,*default.ixigua.com
-  - DOMAIN,*novelapp.ixigua.com
   - DOMAIN,is.snssdk.com
   - DOMAIN,sf3-ttcdn-tos.pstatp.com
   - IP-CIDR,124.222.170.76/32,no-resolve
@@ -318,6 +316,6 @@ payload:
   - PROCESS-NAME,SogouServices
   - PROCESS-NAME,SogouTaskManager
   - PROCESS-NAME,uTools.exe
-  - DOMAIN-REGEX,*-default.ixigua.com
-  - DOMAIN-REGEX,ads*-normal*.zijieapi.com
-  - DOMAIN-REGEX,p*-ad-sign.byteimg.com
+  - DOMAIN-REGEX,*-default\.ixigua\.com
+  - DOMAIN-REGEX,ads.*-normal.*\.zijieapi\.com
+  - DOMAIN-REGEX,p*-ad-sign\.byteimg\.com

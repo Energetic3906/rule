@@ -307,8 +307,6 @@ DOMAIN-SUFFIX,zhushou.2345.cn
 DOMAIN-SUFFIX,zog.link
 DOMAIN-SUFFIX,zz.bdstatic.com
 DOMAIN-SUFFIX,zzy1.quyaoya.com
-DOMAIN,*default.ixigua.com
-DOMAIN,*novelapp.ixigua.com
 DOMAIN,is.snssdk.com
 DOMAIN,sf3-ttcdn-tos.pstatp.com
 IP-CIDR,124.222.170.76/32,no-resolve
@@ -317,8 +315,9 @@ PROCESS-NAME,SogouInput
 PROCESS-NAME,SogouServices
 PROCESS-NAME,SogouTaskManager
 PROCESS-NAME,uTools.exe
-URL-REGEX,*-default.ixigua.com
+URL-REGEX,*-default\.ixigua\.com
+URL-REGEX,*novelapp\.ixigua\.com
 URL-REGEX,^http:\/\/.+\.byteimg\.com\/ad-app-package
 URL-REGEX,^http:\/\/.+\.byteimg\.com\/web\.business\.image
-URL-REGEX,ads*-normal*.zijieapi.com
-URL-REGEX,p*-ad-sign.byteimg.com
+URL-REGEX,ads.*-normal.*\.zijieapi\.com
+URL-REGEX,p*-ad-sign\.byteimg\.com
