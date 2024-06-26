@@ -316,6 +316,7 @@ payload:
   - PROCESS-NAME,SogouServices
   - PROCESS-NAME,SogouTaskManager
   - PROCESS-NAME,uTools.exe
-  - DOMAIN-REGEX,*-default\.ixigua\.com
+  - DOMAIN-REGEX,.*-default\.ixigua\.com
+  - DOMAIN-REGEX,.*novelapp\.ixigua\.com
   - DOMAIN-REGEX,ads.*-normal.*\.zijieapi\.com
   - DOMAIN-REGEX,p*-ad-sign\.byteimg\.com

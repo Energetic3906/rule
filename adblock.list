@@ -315,8 +315,8 @@ PROCESS-NAME,SogouInput
 PROCESS-NAME,SogouServices
 PROCESS-NAME,SogouTaskManager
 PROCESS-NAME,uTools.exe
-URL-REGEX,*-default\.ixigua\.com
-URL-REGEX,*novelapp\.ixigua\.com
+URL-REGEX,.*-default\.ixigua\.com
+URL-REGEX,.*novelapp\.ixigua\.com
 URL-REGEX,^http:\/\/.+\.byteimg\.com\/ad-app-package
 URL-REGEX,^http:\/\/.+\.byteimg\.com\/web\.business\.image
 URL-REGEX,ads.*-normal.*\.zijieapi\.com
