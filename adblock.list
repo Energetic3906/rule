@@ -1,6 +1,4 @@
 AND,((DOMAIN-SUFFIX,biliapi.net),(DOMAIN-KEYWORD,pcdn))
-PROCESS-NAME,uTools.exe
-PROCESS-NAME,PixPin.exe
 DOMAIN-KEYWORD,analysis
 DOMAIN-KEYWORD,googleads
 DOMAIN-KEYWORD,omgmtaw
@@ -38,7 +36,6 @@ DOMAIN-SUFFIX,alog.umeng.com
 DOMAIN-SUFFIX,alookweb.com
 DOMAIN-SUFFIX,alot4you.tech
 DOMAIN-SUFFIX,amdcopen.m.taobao.com
-DOMAIN-SUFFIX,analytics.126.net
 DOMAIN-SUFFIX,analytics.query.yahoo.com
 DOMAIN-SUFFIX,analytics.yahoo.com
 DOMAIN-SUFFIX,analyze.lemurbrowser.com
@@ -310,11 +307,18 @@ DOMAIN-SUFFIX,zhushou.2345.cn
 DOMAIN-SUFFIX,zog.link
 DOMAIN-SUFFIX,zz.bdstatic.com
 DOMAIN-SUFFIX,zzy1.quyaoya.com
+DOMAIN,*default.ixigua.com
+DOMAIN,*novelapp.ixigua.com
+DOMAIN,is.snssdk.com
 DOMAIN,sf3-ttcdn-tos.pstatp.com
 IP-CIDR,124.222.170.76/32,no-resolve
+PROCESS-NAME,PixPin.exe
 PROCESS-NAME,SogouInput
 PROCESS-NAME,SogouServices
 PROCESS-NAME,SogouTaskManager
+PROCESS-NAME,uTools.exe
 URL-REGEX,*-default.ixigua.com
 URL-REGEX,^http:\/\/.+\.byteimg\.com\/ad-app-package
 URL-REGEX,^http:\/\/.+\.byteimg\.com\/web\.business\.image
+URL-REGEX,ads*-normal*.zijieapi.com
+URL-REGEX,p*-ad-sign.byteimg.com
