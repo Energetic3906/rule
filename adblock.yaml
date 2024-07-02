@@ -4,6 +4,10 @@ payload:
   - DOMAIN-KEYWORD,googleads
   - DOMAIN-KEYWORD,omgmtaw
   - DOMAIN-KEYWORD,usage
+  - DOMAIN-REGEX,.*-default\.ixigua\.com
+  - DOMAIN-REGEX,.*novelapp\.ixigua\.com
+  - DOMAIN-REGEX,ads.*-normal.*\.zijieapi\.com
+  - DOMAIN-REGEX,p*-ad-sign\.byteimg\.com
   - DOMAIN-SUFFIX,1vag.com
   - DOMAIN-SUFFIX,a0.app.xiaomi.com
   - DOMAIN-SUFFIX,account.sogou.com
@@ -97,10 +101,12 @@ payload:
   - DOMAIN-SUFFIX,duiba.com.cn
   - DOMAIN-SUFFIX,duomeng.cn
   - DOMAIN-SUFFIX,dup.baidustatic.com
+  - DOMAIN-SUFFIX,e.qq.com
   - DOMAIN-SUFFIX,e.v02u9.cn
   - DOMAIN-SUFFIX,epro.sogou.com
   - DOMAIN-SUFFIX,eq.10jqka.com.cn
   - DOMAIN-SUFFIX,ereg.wip3.adobe.com
+  - DOMAIN-SUFFIX,errlogos.umeng.com
   - DOMAIN-SUFFIX,etl-xlmc-ssl.sandai.net
   - DOMAIN-SUFFIX,everesttech.net
   - DOMAIN-SUFFIX,f10.baidu.com
@@ -316,7 +322,3 @@ payload:
   - PROCESS-NAME,SogouServices
   - PROCESS-NAME,SogouTaskManager
   - PROCESS-NAME,uTools.exe
-  - DOMAIN-REGEX,.*-default\.ixigua\.com
-  - DOMAIN-REGEX,.*novelapp\.ixigua\.com
-  - DOMAIN-REGEX,ads.*-normal.*\.zijieapi\.com
-  - DOMAIN-REGEX,p*-ad-sign\.byteimg\.com
