@@ -9,7 +9,6 @@ payload:
   - DOMAIN-REGEX,ads.*-normal.*\.zijieapi\.com
   - DOMAIN-REGEX,p*-ad-sign\.byteimg\.com
   - DOMAIN-SUFFIX,1vag.com
-  - DOMAIN-SUFFIX,a0.app.xiaomi.com
   - DOMAIN-SUFFIX,account.sogou.com
   - DOMAIN-SUFFIX,activate.wip3.adobe.com
   - DOMAIN-SUFFIX,ad-channel.wikawika.xyz
@@ -48,7 +47,6 @@ payload:
   - DOMAIN-SUFFIX,api.cpu.baidu.com
   - DOMAIN-SUFFIX,api.cupid.iqiyi.com
   - DOMAIN-SUFFIX,api.game.letvstore.com
-  - DOMAIN-SUFFIX,api.installer.xiaomi.com
   - DOMAIN-SUFFIX,api.itaoxiaoshuo.com
   - DOMAIN-SUFFIX,api.mobula.sdk.duapps.com
   - DOMAIN-SUFFIX,api.statsig.com
@@ -75,7 +73,6 @@ payload:
   - DOMAIN-SUFFIX,cdn.zampdsp.com
   - DOMAIN-SUFFIX,channel.fanxing.kugou.com
   - DOMAIN-SUFFIX,cm.fancyapi.com
-  - DOMAIN-SUFFIX,cn.app.chat.xiaomi.net
   - DOMAIN-SUFFIX,comet.yahoo.com
   - DOMAIN-SUFFIX,config.unityads.unity3d.com
   - DOMAIN-SUFFIX,count.game.pps.tv
@@ -86,7 +83,6 @@ payload:
   - DOMAIN-SUFFIX,cytron.videojj.com
   - DOMAIN-SUFFIX,cytroncdn.videojj.com
   - DOMAIN-SUFFIX,d.clkservice.youdao.com
-  - DOMAIN-SUFFIX,data.mistat.xiaomi.com
   - DOMAIN-SUFFIX,dcw.hdswgc.com
   - DOMAIN-SUFFIX,dd713.bj.bcebos.com
   - DOMAIN-SUFFIX,demdex.net
@@ -167,7 +163,6 @@ payload:
   - DOMAIN-SUFFIX,log.v2.hunantv.com
   - DOMAIN-SUFFIX,logic.cpm.cm.kankan.com
   - DOMAIN-SUFFIX,m.12306media.com
-  - DOMAIN-SUFFIX,m.bss.pandora.xiaomi.com
   - DOMAIN-SUFFIX,m.clkservice.youdao.com
   - DOMAIN-SUFFIX,m.game.weibo.cn
   - DOMAIN-SUFFIX,m.ourlj.com
@@ -297,7 +292,6 @@ payload:
   - DOMAIN-SUFFIX,wan.2345.cn
   - DOMAIN-SUFFIX,webstat.kuwo.cn
   - DOMAIN-SUFFIX,wenku-cms.bj.bcebos.com
-  - DOMAIN-SUFFIX,wifiapi.micloud.xiaomi.net
   - DOMAIN-SUFFIX,ws.progrss.yahoo.com
   - DOMAIN-SUFFIX,x.da.hunantv.com
   - DOMAIN-SUFFIX,x1.da.hunantv.com
@@ -314,6 +308,7 @@ payload:
   - DOMAIN-SUFFIX,zog.link
   - DOMAIN-SUFFIX,zz.bdstatic.com
   - DOMAIN-SUFFIX,zzy1.quyaoya.com
+  - DOMAIN-SUFFIX,track.xiachufang.com
   - DOMAIN,is.snssdk.com
   - DOMAIN,sf3-ttcdn-tos.pstatp.com
   - IP-CIDR,124.222.170.76/32,no-resolve
