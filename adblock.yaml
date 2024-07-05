@@ -182,6 +182,7 @@ payload:
   - DOMAIN-SUFFIX,mini.cpc.sogou.com
   - DOMAIN-SUFFIX,minipage.2345.cn
   - DOMAIN-SUFFIX,miui-fxcse.avlyun.com
+  - DOMAIN-SUFFIX,mmstat.com
   - DOMAIN-SUFFIX,motu.p4p.sina.com.cn
   - DOMAIN-SUFFIX,mp4.res.hunantv.com
   - DOMAIN-SUFFIX,msg.71.am
@@ -273,6 +274,7 @@ payload:
   - DOMAIN-SUFFIX,trace.qq.com
   - DOMAIN-SUFFIX,track.hujiang.com
   - DOMAIN-SUFFIX,track.uc.cn
+  - DOMAIN-SUFFIX,track.xiachufang.com
   - DOMAIN-SUFFIX,tracker.appadhoc.com
   - DOMAIN-SUFFIX,tracking.miui.com
   - DOMAIN-SUFFIX,tuia.cn
@@ -308,8 +310,8 @@ payload:
   - DOMAIN-SUFFIX,zog.link
   - DOMAIN-SUFFIX,zz.bdstatic.com
   - DOMAIN-SUFFIX,zzy1.quyaoya.com
-  - DOMAIN-SUFFIX,track.xiachufang.com
   - DOMAIN,is.snssdk.com
+  - DOMAIN,mercury.jd.com
   - DOMAIN,sf3-ttcdn-tos.pstatp.com
   - IP-CIDR,124.222.170.76/32,no-resolve
   - PROCESS-NAME,PixPin.exe

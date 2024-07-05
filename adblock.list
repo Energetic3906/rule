@@ -175,6 +175,7 @@ DOMAIN-SUFFIX,miav-cse.avlyun.com
 DOMAIN-SUFFIX,mini.cpc.sogou.com
 DOMAIN-SUFFIX,minipage.2345.cn
 DOMAIN-SUFFIX,miui-fxcse.avlyun.com
+DOMAIN-SUFFIX,mmstat.com
 DOMAIN-SUFFIX,motu.p4p.sina.com.cn
 DOMAIN-SUFFIX,mp4.res.hunantv.com
 DOMAIN-SUFFIX,msg.71.am
@@ -302,6 +303,7 @@ DOMAIN-SUFFIX,zog.link
 DOMAIN-SUFFIX,zz.bdstatic.com
 DOMAIN-SUFFIX,zzy1.quyaoya.com
 DOMAIN,is.snssdk.com
+DOMAIN,mercury.jd.com
 DOMAIN,sf3-ttcdn-tos.pstatp.com
 IP-CIDR,124.222.170.76/32,no-resolve
 PROCESS-NAME,PixPin.exe
