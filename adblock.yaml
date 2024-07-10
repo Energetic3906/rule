@@ -137,6 +137,7 @@ payload:
   - DOMAIN-SUFFIX,img.adbox.sina.com.cn
   - DOMAIN-SUFFIX,img.amp.ad.sina.com.cn
   - DOMAIN-SUFFIX,imp.optaim.com
+  - DOMAIN-SUFFIX,in.appcenter.ms
   - DOMAIN-SUFFIX,ini.update.360safe.com
   - DOMAIN-SUFFIX,irs01.com
   - DOMAIN-SUFFIX,ixav-cse.avlyun.com
@@ -282,6 +283,7 @@ payload:
   - DOMAIN-SUFFIX,uop.umeng.com
   - DOMAIN-SUFFIX,update.minipage.2345.com
   - DOMAIN-SUFFIX,urchin.lstat.youku.com
+  - DOMAIN-SUFFIX,us-c.viayoo.com
   - DOMAIN-SUFFIX,utrack.hexun.com
   - DOMAIN-SUFFIX,v.l.youku.com
   - DOMAIN-SUFFIX,v1.log.moji.com
