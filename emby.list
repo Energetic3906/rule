@@ -14,6 +14,7 @@ DOMAIN-SUFFIX,carryz.net
 DOMAIN-SUFFIX,emby.ml
 DOMAIN-SUFFIX,loseremby.org
 DOMAIN-SUFFIX,xmsl.org
+DOMAIN-SUFFIX,emby.moe
 # TreeDiagram
 DOMAIN-SUFFIX,123456.al
 # 会员制 EMBY 餐厅
@@ -21,3 +22,5 @@ DOMAIN-SUFFIX,mius.uk
 # plex
 DOMAIN-SUFFIX,plex.direct
 DOMAIN-KEYWORD,plex
+# lyrebirdemby
+DOMAIN-SUFFIX,lyrebirdemby.com
