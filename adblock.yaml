@@ -75,8 +75,6 @@ payload:
   - DOMAIN-SUFFIX,comet.yahoo.com
   - DOMAIN-SUFFIX,config.unityads.unity3d.com
   - DOMAIN-SUFFIX,count.game.pps.tv
-  - DOMAIN-SUFFIX,cpro.baidustatic.com
-  - DOMAIN-SUFFIX,cpro2.baidustatic.com
   - DOMAIN-SUFFIX,cpull.360.cn
   - DOMAIN-SUFFIX,csi.gstatic.com
   - DOMAIN-SUFFIX,cytron.videojj.com
@@ -95,7 +93,6 @@ payload:
   - DOMAIN-SUFFIX,download.2345.cn
   - DOMAIN-SUFFIX,duiba.com.cn
   - DOMAIN-SUFFIX,duomeng.cn
-  - DOMAIN-SUFFIX,dup.baidustatic.com
   - DOMAIN-SUFFIX,e.qq.com
   - DOMAIN-SUFFIX,e.v02u9.cn
   - DOMAIN-SUFFIX,epro.sogou.com
@@ -226,7 +223,6 @@ payload:
   - DOMAIN-SUFFIX,rd.ane.yahoo.co.jp
   - DOMAIN-SUFFIX,rd.wan.360.cn
   - DOMAIN-SUFFIX,rec.g.163.com
-  - DOMAIN-SUFFIX,rigel.baidustatic.com
   - DOMAIN-SUFFIX,rjgw.theta.sogou.com
   - DOMAIN-SUFFIX,rom.pt.miui.srv
   - DOMAIN-SUFFIX,rs.sinajs.cn
