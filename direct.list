@@ -81,7 +81,6 @@ DOMAIN-SUFFIX,baidu.com
 DOMAIN-SUFFIX,baidubcr.com
 DOMAIN-SUFFIX,baidupan.com
 DOMAIN-SUFFIX,baidupcs.com
-DOMAIN-SUFFIX,baidustatic.com
 DOMAIN-SUFFIX,baike.com
 DOMAIN-SUFFIX,baomitu.com
 DOMAIN-SUFFIX,battle.net
@@ -179,7 +178,6 @@ DOMAIN-SUFFIX,fang.com
 DOMAIN-SUFFIX,fantasy.tv
 DOMAIN-SUFFIX,feiliao.com
 DOMAIN-SUFFIX,feng.com
-DOMAIN-SUFFIX,fengkongcloud.com
 DOMAIN-SUFFIX,fir.im
 DOMAIN-SUFFIX,foxmail.com
 DOMAIN-SUFFIX,frdic.com
@@ -262,7 +260,6 @@ DOMAIN-SUFFIX,jianshu.com
 DOMAIN-SUFFIX,jianshu.io
 DOMAIN-SUFFIX,jianshuapi.com
 DOMAIN-SUFFIX,jiasule.com
-DOMAIN-SUFFIX,jiathis.com
 DOMAIN-SUFFIX,jmstatic.com
 DOMAIN-SUFFIX,jomodns.com
 DOMAIN-SUFFIX,jpopsuki.eu
@@ -272,7 +269,6 @@ DOMAIN-SUFFIX,kanimg.com
 DOMAIN-SUFFIX,kankan.com
 DOMAIN-SUFFIX,kaola.com
 DOMAIN-SUFFIX,knewone.com
-DOMAIN-SUFFIX,koowo.com
 DOMAIN-SUFFIX,ksosoft.com
 DOMAIN-SUFFIX,kspkg.com
 DOMAIN-SUFFIX,ksyun.com
@@ -327,8 +323,6 @@ DOMAIN-SUFFIX,miaopai.com
 DOMAIN-SUFFIX,migucloud.com
 DOMAIN-SUFFIX,miguvideo.com
 DOMAIN-SUFFIX,miwifi.com
-DOMAIN-SUFFIX,mmstat.com
-DOMAIN-SUFFIX,mob.com
 DOMAIN-SUFFIX,mobike.com
 DOMAIN-SUFFIX,mogu.com
 DOMAIN-SUFFIX,mogucdn.com
@@ -465,7 +459,6 @@ DOMAIN-SUFFIX,tbcdn.com
 DOMAIN-SUFFIX,teamviewer.com
 DOMAIN-SUFFIX,tencent-cloud.net
 DOMAIN-SUFFIX,tencent.com
-DOMAIN-SUFFIX,tencentmind.com
 DOMAIN-SUFFIX,tendawifi.com
 DOMAIN-SUFFIX,tenpay.com
 DOMAIN-SUFFIX,th-sjy.com
@@ -525,7 +518,6 @@ DOMAIN-SUFFIX,womai.com
 DOMAIN-SUFFIX,workflowy.com
 DOMAIN-SUFFIX,wscdns.com
 DOMAIN-SUFFIX,wukong.com
-DOMAIN-SUFFIX,xdrig.com
 DOMAIN-SUFFIX,xhscdn.com
 DOMAIN-SUFFIX,xiachufang.com
 DOMAIN-SUFFIX,xiami.com
