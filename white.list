@@ -1,5 +1,9 @@
-DOMAIN-SUFFIX,tongji.baidu.com
-DOMAIN-SUFFIX,tongji.baidu.cn
 DOMAIN-SUFFIX,cm.bilibili.com
-PROCESS-NAME,com.tencent.mm
 DOMAIN-SUFFIX,jpush.cn
+DOMAIN-SUFFIX,tongji.baidu.cn
+DOMAIN-SUFFIX,tongji.baidu.com
+PROCESS-NAME,cmb.pb
+PROCESS-NAME,com.chinamworld.main
+PROCESS-NAME,com.icbc
+PROCESS-NAME,com.icbc.elife
+PROCESS-NAME,com.tencent.mm
