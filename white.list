@@ -1,5 +1,6 @@
 DOMAIN-SUFFIX,cm.bilibili.com
 DOMAIN-SUFFIX,jpush.cn
+DOMAIN-SUFFIX,xmpush.xiaomi.com
 DOMAIN-SUFFIX,tongji.baidu.cn
 DOMAIN-SUFFIX,tongji.baidu.com
 PROCESS-NAME,cmb.pb
