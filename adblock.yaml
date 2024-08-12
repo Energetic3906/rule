@@ -265,6 +265,9 @@ payload:
   - DOMAIN-SUFFIX,tg.jifen.2345.com
   - DOMAIN-SUFFIX,tmfsdk.m.qq.com
   - DOMAIN-SUFFIX,tmfsdktcp.m.qq.com
+  - DOMAIN-SUFFIX,tnc3-aliec2.zijieapi.com
+  - DOMAIN-SUFFIX,tnc3-alisc1.zijieapi.com
+  - DOMAIN-SUFFIX,tnc3-bjlgy.zijieapi.com
   - DOMAIN-SUFFIX,tns.simba.taobao.com
   - DOMAIN-SUFFIX,tob-cms.bj.bcebos.com
   - DOMAIN-SUFFIX,topcams.tv
