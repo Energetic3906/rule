@@ -278,6 +278,7 @@ payload:
   - DOMAIN-SUFFIX,tracker.appadhoc.com
   - DOMAIN-SUFFIX,tracking.miui.com
   - DOMAIN-SUFFIX,tuia.cn
+  - DOMAIN-SUFFIX,tz.sec.xiaomi.com
   - DOMAIN-SUFFIX,ujscdn.com
   - DOMAIN-SUFFIX,uop.umeng.com
   - DOMAIN-SUFFIX,update.minipage.2345.com
