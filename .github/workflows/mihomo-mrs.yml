@@ -1,0 +1,48 @@
+name: Update Ruleset
+
+on:
+  schedule:
+    - cron: '0 6 * * *' # 每天早上6点执行
+  push:
+    branches:
+      - main
+
+jobs:
+  update-ruleset:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Get latest release version
+      id: get_release
+      run: |
+        latest_version=$(curl -s https://api.github.com/repos/MetaCubeX/mihomo/releases/latest | jq -r '.tag_name')
+        echo "LATEST_VERSION=${latest_version}" >> $GITHUB_ENV
+
+    - name: Download latest mihomo release
+      run: |
+        download_url="https://github.com/MetaCubeX/mihomo/releases/download/${{ env.LATEST_VERSION }}/mihomo-linux-amd64-${{ env.LATEST_VERSION }}.deb"
+        wget $download_url -O mihomo.deb
+        file mihomo.deb
+        sudo dpkg -i mihomo.deb
+
+    - name: Download CN-ip-cidr.txt
+      run: |
+        wget https://github.com/Hackl0us/GeoIP2-CN/raw/release/CN-ip-cidr.txt
+
+    - name: Convert CN-ip-cidr.txt to CN-ip-cidr.mrs
+      run: |
+        mihomo convert-ruleset ipcidr text CN-ip-cidr.txt CN-ip-cidr.mrs
+
+    - name: Commit and push CN-ip-cidr.mrs
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        git config --local user.name "GitHub Actions"
+        git config --local user.email "101653181+github-actions@users.noreply.github.com"
+        git add CN-ip-cidr.mrs
+        commit_message="Update CN-ip-cidr.mrs on $(date +'%Y-%m-%d')"
+        git commit -m "$commit_message"
+        git push -f origin main
