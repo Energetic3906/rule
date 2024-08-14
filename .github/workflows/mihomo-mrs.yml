@@ -30,7 +30,7 @@ jobs:
 
     - name: Download CN-ip-cidr.txt
       run: |
-        wget https://github.com/Hackl0us/GeoIP2-CN/raw/release/CN-ip-cidr.txt
+        wget https://raw.githubusercontent.com/wendellouyang/geolite2_china_ip_list/main/chnip.txt -O CN-ip-cidr.txt
 
     - name: Convert CN-ip-cidr.txt to CN-ip-cidr.mrs
       run: |
