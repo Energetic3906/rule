@@ -1,6 +1,7 @@
 DOMAIN-SUFFIX,jpush.cn
 DOMAIN-SUFFIX,tongji.baidu.cn
 DOMAIN-SUFFIX,tongji.baidu.com
+DOMAIN,i.snssdk.com
 PROCESS-NAME,cmb.pb
 PROCESS-NAME,com.chinamworld.main
 PROCESS-NAME,com.icbc
