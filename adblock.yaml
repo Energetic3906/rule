@@ -72,6 +72,7 @@ payload:
   - DOMAIN-SUFFIX,cdn.zampdsp.com
   - DOMAIN-SUFFIX,channel.fanxing.kugou.com
   - DOMAIN-SUFFIX,cm.fancyapi.com
+  - DOMAIN-SUFFIX,cn.app.chat.xiaomi.net
   - DOMAIN-SUFFIX,comet.yahoo.com
   - DOMAIN-SUFFIX,config.unityads.unity3d.com
   - DOMAIN-SUFFIX,count.game.pps.tv
@@ -271,6 +272,7 @@ payload:
   - DOMAIN-SUFFIX,tnc3-bjlgy.zijieapi.com
   - DOMAIN-SUFFIX,tns.simba.taobao.com
   - DOMAIN-SUFFIX,tob-cms.bj.bcebos.com
+  - DOMAIN-SUFFIX,tobapplog.ctobsnssdk.com
   - DOMAIN-SUFFIX,topcams.tv
   - DOMAIN-SUFFIX,trace.qq.com
   - DOMAIN-SUFFIX,track.hujiang.com
