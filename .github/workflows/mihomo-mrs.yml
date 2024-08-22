@@ -49,4 +49,4 @@ jobs:
         git add CN-ip-cidr.mrs
         commit_message="Update CN-ip-cidr.mrs on $(date +'%Y-%m-%d')"
         git commit -m "$commit_message"
-        git push -f origin main
+        git push -f -u origin main
