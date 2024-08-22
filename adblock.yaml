@@ -1,6 +1,7 @@
 payload:
   - AND,((DOMAIN-SUFFIX,biliapi.net),(DOMAIN-KEYWORD,pcdn))
   - DOMAIN-KEYWORD,analysis
+  - DOMAIN-KEYWORD,applog-hl.fqnovel.com
   - DOMAIN-KEYWORD,googleads
   - DOMAIN-KEYWORD,omgmtaw
   - DOMAIN-KEYWORD,usage
@@ -70,6 +71,7 @@ payload:
   - DOMAIN-SUFFIX,capndr.com
   - DOMAIN-SUFFIX,ccc.sys.miui.com
   - DOMAIN-SUFFIX,cdn.zampdsp.com
+  - DOMAIN-SUFFIX,frontier100-toutiao-lf.fqnovel.com
   - DOMAIN-SUFFIX,channel.fanxing.kugou.com
   - DOMAIN-SUFFIX,cm.fancyapi.com
   - DOMAIN-SUFFIX,cn.app.chat.xiaomi.net
