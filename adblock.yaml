@@ -24,6 +24,7 @@ payload:
   - DOMAIN-SUFFIX,ads.bssdl.kugou.com
   - DOMAIN-SUFFIX,ads.linkedin.com
   - DOMAIN-SUFFIX,ads.yahoo.com
+  - DOMAIN-SUFFIX,ads5-normal-hl.zijieapi.com
   - DOMAIN-SUFFIX,adsame.com
   - DOMAIN-SUFFIX,adserver.unityads.unity3d.com
   - DOMAIN-SUFFIX,adserver.yahoo.com
@@ -70,6 +71,7 @@ payload:
   - DOMAIN-SUFFIX,canstrm.com
   - DOMAIN-SUFFIX,capndr.com
   - DOMAIN-SUFFIX,ccc.sys.miui.com
+  - DOMAIN-SUFFIX,cdn.ynuf.aliapp.org
   - DOMAIN-SUFFIX,cdn.zampdsp.com
   - DOMAIN-SUFFIX,channel.fanxing.kugou.com
   - DOMAIN-SUFFIX,cm.fancyapi.com
@@ -195,6 +197,8 @@ payload:
   - DOMAIN-SUFFIX,nl.notice.iqiyi.com
   - DOMAIN-SUFFIX,noxagile.duapp.com
   - DOMAIN-SUFFIX,omgmta1.qq.com
+  - DOMAIN-SUFFIX,open.kuaishouzt.com
+  - DOMAIN-SUFFIX,open.kwaizt.com
   - DOMAIN-SUFFIX,ozone.10jqka.com.cn
   - DOMAIN-SUFFIX,p.clkservice.youdao.com
   - DOMAIN-SUFFIX,p.l.qq.com
@@ -228,6 +232,7 @@ payload:
   - DOMAIN-SUFFIX,rd.ane.yahoo.co.jp
   - DOMAIN-SUFFIX,rd.wan.360.cn
   - DOMAIN-SUFFIX,rec.g.163.com
+  - DOMAIN-SUFFIX,referee.xiaohongshu.com
   - DOMAIN-SUFFIX,rjgw.theta.sogou.com
   - DOMAIN-SUFFIX,rom.pt.miui.srv
   - DOMAIN-SUFFIX,rs.sinajs.cn
@@ -275,6 +280,8 @@ payload:
   - DOMAIN-SUFFIX,tns.simba.taobao.com
   - DOMAIN-SUFFIX,tob-cms.bj.bcebos.com
   - DOMAIN-SUFFIX,tobapplog.ctobsnssdk.com
+  - DOMAIN-SUFFIX,tobapplog.volceapplog.com
+  - DOMAIN-SUFFIX,toblog.volceapplog.com
   - DOMAIN-SUFFIX,topcams.tv
   - DOMAIN-SUFFIX,trace.qq.com
   - DOMAIN-SUFFIX,track.hujiang.com
@@ -305,6 +312,7 @@ payload:
   - DOMAIN-SUFFIX,x.da.hunantv.com
   - DOMAIN-SUFFIX,x1.da.hunantv.com
   - DOMAIN-SUFFIX,xlmc.sec.miui.com
+  - DOMAIN-SUFFIX,xp.apple.com
   - DOMAIN-SUFFIX,xpe.cxaerp.com
   - DOMAIN-SUFFIX,xs.houyi.baofeng.net
   - DOMAIN-SUFFIX,y.da.hunantv.com
