@@ -187,6 +187,10 @@ payload:
   - DOMAIN-SUFFIX,minipage.2345.cn
   - DOMAIN-SUFFIX,miui-fxcse.avlyun.com
   - DOMAIN-SUFFIX,mmstat.com
+  - DOMAIN-SUFFIX,pull-flv-l11.douyincdn.com
+  - DOMAIN-SUFFIX,mon11-misc-hl.fqnovel.com
+  - DOMAIN-SUFFIX,adash-emas.cn-hangzhou.aliyuncs.com
+  - DOMAIN-SUFFIX,api.kingdata.ksyun.com
   - DOMAIN-SUFFIX,motu.p4p.sina.com.cn
   - DOMAIN-SUFFIX,mp4.res.hunantv.com
   - DOMAIN-SUFFIX,msg.71.am
