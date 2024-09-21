@@ -28,9 +28,13 @@ jobs:
         file mihomo.deb
         sudo dpkg -i mihomo.deb
 
-    - name: Download CN-ip-cidr.txt
+    - name: Download CN-ip-cidr.txt all_cn_ipv6.txt china6.txt
       run: |
         wget https://raw.githubusercontent.com/wendellouyang/geolite2_china_ip_list/main/chnip.txt -O CN-ip-cidr.txt
+        wget https://ispip.clang.cn/all_cn_ipv6.txt -O all_cn_ipv6.txt
+        wget https://raw.githubusercontent.com/gaoyifan/china-operator-ip/ip-lists/china6.txt -O china6.txt
+        cat CN-ip-cidr.txt all_cn_ipv6.txt china6.txt | sort -u > temp_cidrs.txt
+        mv temp_cidrs.txt CN-ip-cidr.txt
 
     - name: Convert CN-ip-cidr.txt to CN-ip-cidr.mrs
       run: |
@@ -38,7 +42,7 @@ jobs:
 
     - name: Remove untracked files
       run: |
-        git clean -f CN-ip-cidr.txt mihomo.deb
+        git clean -f all_cn_ipv6.txt china6.txt CN-ip-cidr.txt mihomo.deb
 
     - name: Commit and push CN-ip-cidr.mrs
       env:
