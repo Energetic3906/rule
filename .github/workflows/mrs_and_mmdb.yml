@@ -15,6 +15,14 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
+    - name: Set up Python
+      uses: actions/setup-python@v5
+
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install mmdb_writer netaddr
+
     - name: Get latest release version
       id: get_release
       run: |
@@ -44,6 +52,10 @@ jobs:
         mihomo convert-ruleset ipcidr text CN-ip-cidr.txt CN-ip-cidr.mrs
         mihomo convert-ruleset domain yaml ChinaMax_Domain.yaml ChinaMax_Domain.mrs
 
+    - name: Convert CN-ip-cidr.txt to MMDB format
+      run: |
+        python convert_to_mmdb.py CN-ip-cidr.txt Country.mmdb
+
     - name: Remove untracked files
       run: |
         git clean -f all_cn_ipv6.txt china6.txt CN-ip-cidr.txt mihomo.deb ChinaMax_Domain.yaml
@@ -54,7 +66,7 @@ jobs:
       run: |
         git config --local user.name "github-actions[bot]"
         git config --local user.email "101653181+github-actions[bot]@users.noreply.github.com"
-        git add CN-ip-cidr.mrs ChinaMax_Domain.mrs
-        commit_message="Update CN-ip-cidr.mrs on $(date +'%Y-%m-%d')"
+        git add CN-ip-cidr.mrs ChinaMax_Domain.mrs Country.mmdb
+        commit_message="Update mrs and mmdb on $(date +'%Y-%m-%d')"
         git commit -m "$commit_message" || true
         git push -f -u origin main
