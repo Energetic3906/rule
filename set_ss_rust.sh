@@ -57,8 +57,6 @@ cd /root/ss-rust
 
 # 第六步：写入docker-compose.yml的内容
 cat > /root/ss-rust/docker-compose.yml <<EOL
-version: "3.0"
-
 services:
   shadowsocks:
     image: teddysun/shadowsocks-rust:latest
