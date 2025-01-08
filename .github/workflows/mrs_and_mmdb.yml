@@ -36,21 +36,19 @@ jobs:
         file mihomo.deb
         sudo dpkg -i mihomo.deb
 
-    - name: Download ChinaMax_domain.yaml
-      run: |
-        wget https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/ChinaMax/ChinaMax_Domain.yaml -O ChinaMax_Domain.yaml
     - name: Download CN-ip-cidr.txt all_cn_ipv6.txt china6.txt
       run: |
-        wget https://raw.githubusercontent.com/wendellouyang/geolite2_china_ip_list/main/chnip.txt -O CN-ip-cidr.txt
-        wget https://ispip.clang.cn/all_cn_ipv6.txt -O all_cn_ipv6.txt
+        # IPv4
+        wget https://raw.githubusercontent.com/gaoyifan/china-operator-ip/refs/heads/ip-lists/china.txt -O china.txt
+        wget https://ispip.clang.cn/all_cn.txt -O all_cn.txt
+        # IPv6
         wget https://raw.githubusercontent.com/gaoyifan/china-operator-ip/ip-lists/china6.txt -O china6.txt
-        cat CN-ip-cidr.txt all_cn_ipv6.txt china6.txt | sort -u > temp_cidrs.txt
-        mv temp_cidrs.txt CN-ip-cidr.txt
+        wget https://ispip.clang.cn/all_cn_ipv6.txt -O all_cn_ipv6.txt
+        cat china.txt all_cn.txt china6.txt all_cn_ipv6.txt | sort -u >  CN-ip-cidr.txt
 
     - name: Convert txt/yaml to mrs
       run: |
         mihomo convert-ruleset ipcidr text CN-ip-cidr.txt CN-ip-cidr.mrs
-        mihomo convert-ruleset domain yaml ChinaMax_Domain.yaml ChinaMax_Domain.mrs
 
     - name: Convert CN-ip-cidr.txt to MMDB format
       run: |
@@ -58,7 +56,7 @@ jobs:
 
     - name: Remove untracked files
       run: |
-        git clean -f all_cn_ipv6.txt china6.txt CN-ip-cidr.txt mihomo.deb ChinaMax_Domain.yaml
+        git clean -f china.txt china6.txt CN-ip-cidr.txt mihomo.deb
 
     - name: Commit and push mrs
       env:
@@ -66,7 +64,7 @@ jobs:
       run: |
         git config --local user.name "github-actions[bot]"
         git config --local user.email "101653181+github-actions[bot]@users.noreply.github.com"
-        git add CN-ip-cidr.mrs ChinaMax_Domain.mrs Country.mmdb
+        git add all_cn.txt all_cn_ipv6.txt CN-ip-cidr.mrs Country.mmdb
         commit_message="Update mrs and mmdb on $(date +'%Y-%m-%d')"
         git commit -m "$commit_message" || true
         git push -f -u origin main
