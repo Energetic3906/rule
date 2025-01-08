@@ -48,7 +48,14 @@ jobs:
         # IPv6
         wget https://raw.githubusercontent.com/gaoyifan/china-operator-ip/ip-lists/china6.txt -O china6.txt
         wget https://ispip.clang.cn/all_cn_ipv6.txt -O all_cn_ipv6.txt
-        cat china.txt all_cn.txt china6.txt all_cn_ipv6.txt | sort -u >  CN-ip-cidr.txt
+
+    - name: Merge and filter CIDR (Classless Inter-Domain Routing) address blocks
+      run: |
+        source .venv/bin/activate
+        python3 merge_and_filter_cidr.py china.txt all_cn.txt china6.txt all_cn_ipv6.txt
+        cat merged_ipv4.txt merged_ipv6.txt | sort -u > CN-ip-cidr.txt
+        rm merged_ipv4.txt merged_ipv6.txt
+
 
     - name: Convert txt/yaml to mrs
       run: |
@@ -57,7 +64,7 @@ jobs:
     - name: Convert CN-ip-cidr.txt to MMDB format
       run: |
         source .venv/bin/activate
-        python convert_to_mmdb.py CN-ip-cidr.txt Country.mmdb
+        python3 convert_to_mmdb.py CN-ip-cidr.txt Country.mmdb
 
     - name: Remove untracked files
       run: |
