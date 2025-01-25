@@ -85,6 +85,7 @@ payload:
   - DOMAIN-SUFFIX,cytron.videojj.com
   - DOMAIN-SUFFIX,cytroncdn.videojj.com
   - DOMAIN-SUFFIX,d.clkservice.youdao.com
+  - DOMAIN-SUFFIX,dataflow.biliapi.com
   - DOMAIN-SUFFIX,dcw.hdswgc.com
   - DOMAIN-SUFFIX,dd713.bj.bcebos.com
   - DOMAIN-SUFFIX,demdex.net
@@ -166,6 +167,7 @@ payload:
   - DOMAIN-SUFFIX,log.mix.sina.com.cn
   - DOMAIN-SUFFIX,log.outbrain.com
   - DOMAIN-SUFFIX,log.v2.hunantv.com
+  - DOMAIN-SUFFIX,log0-applog-hl.fqnovel.com
   - DOMAIN-SUFFIX,logic.cpm.cm.kankan.com
   - DOMAIN-SUFFIX,m.12306media.com
   - DOMAIN-SUFFIX,m.clkservice.youdao.com
@@ -210,6 +212,8 @@ payload:
   - DOMAIN-SUFFIX,p.vq6nsu.cn
   - DOMAIN-SUFFIX,p3p.yahoo.com
   - DOMAIN-SUFFIX,partnerads.ysm.yahoo.com
+  - DOMAIN-SUFFIX,pcc-v1.log.mgtv.com
+  - DOMAIN-SUFFIX,pdata.log.mgtv.com
   - DOMAIN-SUFFIX,pdown.stat.360safe.com
   - DOMAIN-SUFFIX,pemsrv.com
   - DOMAIN-SUFFIX,pgdt.ugdtimg.com
@@ -259,6 +263,7 @@ payload:
   - DOMAIN-SUFFIX,shrek.6.cn
   - DOMAIN-SUFFIX,singular.net
   - DOMAIN-SUFFIX,song.fanxing.kugou.com
+  - DOMAIN-SUFFIX,spider-tracker.xiaohongshu.com
   - DOMAIN-SUFFIX,stadig.ifeng.com
   - DOMAIN-SUFFIX,stat.ws.126.net
   - DOMAIN-SUFFIX,static.ts.360.com
