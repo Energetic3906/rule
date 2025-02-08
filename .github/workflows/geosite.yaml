@@ -5,9 +5,7 @@ on:
     - cron: "30 22 * * *" # 6:30 AM UTC+8
   push:
     branches:
-      - master
-    paths-ignore:
-      - "**/README.md"
+      - main
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -21,11 +19,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Checkout MetaCubeX/meta-rules-converter
+      - name: Checkout Energetic3906/domain-list-community
         uses: actions/checkout@v4
         with:
-          repository: MetaCubeX/meta-rules-converter
-          path: convert
+          repository: Energetic3906/domain-list-community
+          ref: master
+          path: community
 
       - name: Setup Go
         uses: actions/setup-go@v5
@@ -36,12 +35,16 @@ jobs:
       - name: Build geosite-lite.dat file
         env:
           NO_SKIP: true
-          SED: grep "server=" | grep -v "#" | sed 's/  server=/,//g' | sed 's/\/\*,//g'
         run: |
           cd community || exit 1
-          mkdir -p data-lite
-          curl -sSL https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/refs/heads/master/accelerated-domains.china.conf > ./data-lite/cn
-          go run ./ --datapath=./data-lite --outputname geosite-lite.dat
+          mkdir -p data
+          curl -sSL https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/refs/heads/master/accelerated-domains.china.conf | grep "server=" | grep -v "#" | sed 's/ *server=\/\([^\/]*\)\/.*/\1/g' > ./data/cn
+          go run ./ --datapath=./data --outputname geosite.dat
+          mv geosite.dat ../
+          cd ../
+          echo "Current directory: $(pwd)"
+          ls -l geosite.dat
+          
 
       - name: Commit and push dat
         env:
@@ -49,6 +52,7 @@ jobs:
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "101653181+github-actions[bot]@users.noreply.github.com"
+          echo "Current directory: $(pwd)"
           git add geosite.dat
           commit_message="Update geosite.dat on $(date +'%Y-%m-%d')"
           git commit -m "$commit_message" || true

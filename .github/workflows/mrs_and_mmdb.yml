@@ -3,9 +3,9 @@ name: Update Ruleset
 on:
   schedule:
     - cron: '0 6 * * *' # 每天早上6点执行
-  push:
-    branches:
-      - main
+  # push:
+  #   branches:
+  #     - main
 
 jobs:
   update-ruleset:
