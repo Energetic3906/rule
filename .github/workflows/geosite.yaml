@@ -1,0 +1,55 @@
+name: Build rules dat files
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 22 * * *" # 6:30 AM UTC+8
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - "**/README.md"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set variables
+        run: |
+          echo "GOAMD64=v3" >> $GITHUB_ENV
+          echo "BUILDTIME=$(TZ=Asia/Shanghai date +'%Y-%m-%d %H:%M')" >> $GITHUB_ENV
+        shell: bash
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Checkout MetaCubeX/meta-rules-converter
+        uses: actions/checkout@v4
+        with:
+          repository: MetaCubeX/meta-rules-converter
+          path: convert
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.22'
+          cache-dependency-path: ./custom/go.sum
+
+      - name: Build geosite-lite.dat file
+        env:
+          NO_SKIP: true
+          SED: grep "server=" | grep -v "#" | sed 's/  server=/,//g' | sed 's/\/\*,//g'
+        run: |
+          cd community || exit 1
+          mkdir -p data-lite
+          curl -sSL https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/refs/heads/master/accelerated-domains.china.conf > ./data-lite/cn
+          go run ./ --datapath=./data-lite --outputname geosite-lite.dat
+
+      - name: Commit and push dat
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "101653181+github-actions[bot]@users.noreply.github.com"
+          git add geosite.dat
+          commit_message="Update geosite.dat on $(date +'%Y-%m-%d')"
+          git commit -m "$commit_message" || true
+          git push -f -u origin main
