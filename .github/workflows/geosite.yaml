@@ -41,10 +41,7 @@ jobs:
           curl -sSL https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/refs/heads/master/accelerated-domains.china.conf | grep "server=" | grep -v "#" | sed 's/ *server=\/\([^\/]*\)\/.*/\1/g' > ./data/cn
           go run ./ --datapath=./data --outputname geosite.dat
           mv geosite.dat ../
-          cd ../
-          echo "Current directory: $(pwd)"
-          ls -l geosite.dat
-          
+          curl -sSL https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/refs/heads/master/accelerated-domains.china.conf | grep "server=" | grep -v "#" | sed 's/^server=\/\([^\/]*\)\/.*/DOMAIN-SUFFIX,\1/' > geosite.list
 
       - name: Commit and push dat
         env:
@@ -53,7 +50,7 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git config --local user.email "101653181+github-actions[bot]@users.noreply.github.com"
           echo "Current directory: $(pwd)"
-          git add geosite.dat
+          git add geosite.dat geosite.list
           commit_message="Update geosite.dat on $(date +'%Y-%m-%d')"
           git commit -m "$commit_message" || true
           git push -f -u origin main
