@@ -40,7 +40,7 @@ jobs:
           mkdir -p data
           curl -sSL https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/refs/heads/master/accelerated-domains.china.conf | grep "server=" | grep -v "#" | sed 's/ *server=\/\([^\/]*\)\/.*/\1/g' > ./data/cn
           go run ./ --datapath=./data --outputname geosite.dat
-          mv geosite.dat ../
+          mv geosite.dat ../ && cd ../
           curl -sSL https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/refs/heads/master/accelerated-domains.china.conf | grep "server=" | grep -v "#" | sed 's/^server=\/\([^\/]*\)\/.*/DOMAIN-SUFFIX,\1/' > geosite.list
 
       - name: Commit and push dat
