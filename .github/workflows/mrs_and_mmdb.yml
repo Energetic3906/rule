@@ -2,7 +2,7 @@ name: Update Ruleset
 
 on:
   schedule:
-    - cron: '0 6 * * *' # 每天早上6点执行
+    - cron: '0 22 * * *' # 每天早上6点执行
   # push:
   #   branches:
   #     - main
