@@ -1,4 +1,4 @@
-name: Build rules dat files
+name: Build Geosite Data
 on:
   workflow_dispatch:
   schedule:

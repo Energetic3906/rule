@@ -1,4 +1,4 @@
-name: Update Ruleset
+name: Update MRS and MMDB
 
 on:
   schedule:
