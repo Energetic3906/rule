@@ -1,6 +1,7 @@
 name: Update MRS and MMDB
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: '0 22 * * *' # 每天早上6点执行
   # push:
