@@ -4,6 +4,7 @@ payload:
   - DOMAIN-KEYWORD,applog-hl.fqnovel.com
   - DOMAIN-KEYWORD,googleads
   - DOMAIN-KEYWORD,omgmtaw
+  - DOMAIN-KEYWORD,stun
   - DOMAIN-KEYWORD,usage
   - DOMAIN-REGEX,.*-default\.ixigua\.com
   - DOMAIN-REGEX,.*novelapp\.ixigua\.com
