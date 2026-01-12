@@ -344,6 +344,7 @@ payload:
   - DOMAIN,sf3-ttcdn-tos.pstatp.com
   - IP-CIDR,124.222.170.76/32,no-resolve
   - PROCESS-NAME,com.miui.guardprovider
+  - PROCESS-NAME,com.miui.packageinstaller
   - PROCESS-NAME,PixPin.exe
   - PROCESS-NAME,SogouInput
   - PROCESS-NAME,SogouServices
