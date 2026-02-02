@@ -33,7 +33,6 @@ jobs:
       uses: actions/setup-python@v5
       with:
         python-version: '3.11'
-        cache: 'pip' # 新增：自动缓存 pip 依赖，加速构建
 
     - name: Setup Go
       uses: actions/setup-go@v5
