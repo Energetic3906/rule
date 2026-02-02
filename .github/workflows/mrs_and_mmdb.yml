@@ -3,10 +3,7 @@ name: Update MRS and MMDB
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 22 * * *' # 每天早上6点执行
-  # push:
-  #   branches:
-  #     - main
+    - cron: '0 22 * * *' # 每天早上6点执行 (UTC+8)
 
 jobs:
   update-ruleset:
@@ -21,6 +18,8 @@ jobs:
 
     - name: Checkout repository
       uses: actions/checkout@v4
+      with:
+        fetch-depth: 1
 
     - name: Checkout Energetic3906/domain-list-community
       uses: actions/checkout@v4
@@ -28,17 +27,19 @@ jobs:
         repository: Energetic3906/domain-list-community
         ref: master
         path: community
+        fetch-depth: 1
 
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
         python-version: '3.11'
-      
+        cache: 'pip' # 新增：自动缓存 pip 依赖，加速构建
+
     - name: Setup Go
       uses: actions/setup-go@v5
       with:
         go-version: '1.22'
-        cache-dependency-path: ./custom/go.sum
+        cache: false # 修改：关闭自动缓存以消除 "Restore cache failed" 警告
 
     - name: Install Dependencies
       run: |
@@ -57,10 +58,9 @@ jobs:
       run: |
         download_url="https://github.com/MetaCubeX/mihomo/releases/download/${{ env.LATEST_VERSION }}/mihomo-linux-amd64-${{ env.LATEST_VERSION }}.deb"
         wget $download_url -O mihomo.deb
-        file mihomo.deb
         sudo dpkg -i mihomo.deb
 
-    - name: Download CN-ip-cidr.txt all_cn_ipv6.txt china6.txt
+    - name: Download IP lists
       run: |
         # IPv4
         wget https://raw.githubusercontent.com/gaoyifan/china-operator-ip/refs/heads/ip-lists/china.txt -O china.txt
@@ -69,13 +69,13 @@ jobs:
         wget https://raw.githubusercontent.com/gaoyifan/china-operator-ip/ip-lists/china6.txt -O china6.txt
         wget https://ispip.clang.cn/all_cn_ipv6.txt -O all_cn_ipv6.txt
 
-    - name: Merge and filter CIDR (Classless Inter-Domain Routing) address blocks
+    - name: Merge and filter CIDR
       run: |
         source .venv/bin/activate
+        # 确保你的仓库根目录下有 merge_and_filter_cidr.py 文件
         python3 merge_and_filter_cidr.py china.txt all_cn.txt china6.txt all_cn_ipv6.txt
         cat merged_ipv4.txt merged_ipv6.txt | sort -u > CN-ip-cidr.txt
         rm merged_ipv4.txt merged_ipv6.txt
-
 
     - name: Convert txt/yaml to mrs
       run: |
@@ -84,6 +84,7 @@ jobs:
     - name: Convert CN-ip-cidr.txt to MMDB format
       run: |
         source .venv/bin/activate
+        # 确保你的仓库根目录下有 convert_to_mmdb.py 文件
         python3 convert_to_mmdb.py CN-ip-cidr.txt Country.mmdb
     
     ## Geosite build
@@ -94,15 +95,19 @@ jobs:
         cd community || { echo "Failed to enter community directory"; exit 1; }
         go mod tidy
         mkdir -p data
+        # 下载并处理 accelerated-domains.china.conf
         curl -sSL https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/refs/heads/master/accelerated-domains.china.conf | grep "server=" | grep -v "#" | sed 's/ *server=\/\([^\/]*\)\/.*/\1/g' > ./data/cn
+        # 运行构建
         go run ./ --datapath=./data --outputname geosite.dat
-        mv geosite.dat ../ && cd ../
+        # 移动产物并返回上级目录
+        mv geosite.dat ../
+        cd ../
+        # 生成 geosite.list
         curl -sSL https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/refs/heads/master/accelerated-domains.china.conf | grep "server=" | grep -v "#" | sed 's/^server=\/\([^\/]*\)\/.*/DOMAIN-SUFFIX,\1/' > geosite.list
-
 
     - name: Remove untracked files
       run: |
-        rm   china.txt china6.txt CN-ip-cidr.txt mihomo.deb
+        rm -f china.txt china6.txt CN-ip-cidr.txt mihomo.deb
 
     - name: Commit and push mrs
       env:
@@ -111,8 +116,10 @@ jobs:
         git config --local user.name "github-actions[bot]"
         git config --local user.email "101653181+github-actions[bot]@users.noreply.github.com"
         git add all_cn.txt all_cn_ipv6.txt CN-ip-cidr.mrs Country.mmdb geosite.dat geosite.list
-        commit_message="Update mrs and mmdb and Geosite Data on $(date +'%Y-%m-%d')"
-        # 检查是否有需要提交的变更
+        
+        # 使用开头定义的 BUILDTIME 变量，保证一致性
+        commit_message="Update mrs and mmdb and Geosite Data on ${{ env.BUILDTIME }}"
+        
         if [[ -n "$(git status --porcelain)" ]]; then
           git commit -m "$commit_message"
           git push -u origin main
