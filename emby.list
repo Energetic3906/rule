@@ -1,16 +1,22 @@
-# 卷毛鼠
+# jms
 DOMAIN-SUFFIX,jmsooo.com
 DOMAIN-SUFFIX,jmsuper.com
 # odyssey
 DOMAIN-SUFFIX,odysseyplus.site
-#1111 emby
+# 1111
 DOMAIN-SUFFIX,emby.ml
 DOMAIN-SUFFIX,xxlb.net
 DOMAIN-SUFFIX,loseremby.org
 DOMAIN-SUFFIX,xmsl.org
 DOMAIN-SUFFIX,emby.moe
-# guai emby
-DOMAIN-SUFFIX,guaiguaiemby.83787.de
+# guai
+DOMAIN-SUFFIX,83787.de
+# Mirai
+DOMAIN-SUFFIX,jiedaibao.gs
+DOMAIN-SUFFIX,miraiemby.com
+# embyhello
+DOMAIN-SUFFIX,istyboe.top
+DOMAIN-SUFFIX,pushgoodcloud.com
 # plex
 DOMAIN-SUFFIX,plex.direct
 DOMAIN-KEYWORD,plex
