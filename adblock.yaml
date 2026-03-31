@@ -12,6 +12,7 @@ payload:
   - DOMAIN-REGEX,p*-ad-sign\.byteimg\.com
   - DOMAIN-SUFFIX,1vag.com
   - DOMAIN-SUFFIX,account.sogou.com
+  - DOMAIN-SUFFIX,accounts.livechatinc.com
   - DOMAIN-SUFFIX,activate.wip3.adobe.com
   - DOMAIN-SUFFIX,ad-channel.wikawika.xyz
   - DOMAIN-SUFFIX,ad-display.wikawika.xyz
@@ -44,10 +45,12 @@ payload:
   - DOMAIN-SUFFIX,alookweb.com
   - DOMAIN-SUFFIX,alot4you.tech
   - DOMAIN-SUFFIX,amdcopen.m.taobao.com
+  - DOMAIN-SUFFIX,analytics.gologin.com
   - DOMAIN-SUFFIX,analytics.query.yahoo.com
   - DOMAIN-SUFFIX,analytics.yahoo.com
   - DOMAIN-SUFFIX,analyze.lemurbrowser.com
   - DOMAIN-SUFFIX,androidgo.duapp.com
+  - DOMAIN-SUFFIX,api-iam.intercom.io
   - DOMAIN-SUFFIX,api.cpu.baidu.com
   - DOMAIN-SUFFIX,api.cupid.iqiyi.com
   - DOMAIN-SUFFIX,api.game.letvstore.com
@@ -74,6 +77,7 @@ payload:
   - DOMAIN-SUFFIX,canstrm.com
   - DOMAIN-SUFFIX,capndr.com
   - DOMAIN-SUFFIX,ccc.sys.miui.com
+  - DOMAIN-SUFFIX,cdn.livechatinc.com
   - DOMAIN-SUFFIX,cdn.ynuf.aliapp.org
   - DOMAIN-SUFFIX,cdn.zampdsp.com
   - DOMAIN-SUFFIX,channel.fanxing.kugou.com
@@ -152,6 +156,7 @@ payload:
   - DOMAIN-SUFFIX,jifen.2345.cn
   - DOMAIN-SUFFIX,jifendownload.2345.cn
   - DOMAIN-SUFFIX,js-apac-ss.ysm.yahoo.com
+  - DOMAIN-SUFFIX,js.intercomcdn.com
   - DOMAIN-SUFFIX,jupiter.sys.miui.com
   - DOMAIN-SUFFIX,jyd.fjzdmy.com
   - DOMAIN-SUFFIX,kochava.com
@@ -259,7 +264,9 @@ payload:
   - DOMAIN-SUFFIX,sdk.cferw.com
   - DOMAIN-SUFFIX,sdkconf.avlyun.com
   - DOMAIN-SUFFIX,sec.sginput.qq.com
+  - DOMAIN-SUFFIX,secure.livechatinc.com
   - DOMAIN-SUFFIX,segment.com
+  - DOMAIN-SUFFIX,sentry.amzn.pro
   - DOMAIN-SUFFIX,shouji.360.cn
   - DOMAIN-SUFFIX,shouji.sogou.com
   - DOMAIN-SUFFIX,show.re.taobao.com
@@ -322,6 +329,7 @@ payload:
   - DOMAIN-SUFFIX,wan.2345.cn
   - DOMAIN-SUFFIX,webstat.kuwo.cn
   - DOMAIN-SUFFIX,wenku-cms.bj.bcebos.com
+  - DOMAIN-SUFFIX,widget.intercom.io
   - DOMAIN-SUFFIX,ws.progrss.yahoo.com
   - DOMAIN-SUFFIX,x.da.hunantv.com
   - DOMAIN-SUFFIX,x1.da.hunantv.com
