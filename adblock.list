@@ -16,6 +16,7 @@ DOMAIN-SUFFIX,ad.duapps.com
 DOMAIN-SUFFIX,ad.unimhk.com
 DOMAIN-SUFFIX,adapi.shouji.360.cn
 DOMAIN-SUFFIX,adash-c.m.taobao.com
+DOMAIN-SUFFIX,adash-emas.cn-hangzhou.aliyuncs.com
 DOMAIN-SUFFIX,adjust.com
 DOMAIN-SUFFIX,adm.leju.sina.com.cn
 DOMAIN-SUFFIX,admarvel.com
@@ -51,6 +52,7 @@ DOMAIN-SUFFIX,api.cpu.baidu.com
 DOMAIN-SUFFIX,api.cupid.iqiyi.com
 DOMAIN-SUFFIX,api.game.letvstore.com
 DOMAIN-SUFFIX,api.itaoxiaoshuo.com
+DOMAIN-SUFFIX,api.kingdata.ksyun.com
 DOMAIN-SUFFIX,api.mobula.sdk.duapps.com
 DOMAIN-SUFFIX,api.statsig.com
 DOMAIN-SUFFIX,api.tuisong.baidu.com
@@ -98,10 +100,12 @@ DOMAIN-SUFFIX,doubleplay-conf-yql.media.yahoo.com
 DOMAIN-SUFFIX,download.2345.cn
 DOMAIN-SUFFIX,duiba.com.cn
 DOMAIN-SUFFIX,duomeng.cn
+DOMAIN-SUFFIX,e.qq.com
 DOMAIN-SUFFIX,e.v02u9.cn
 DOMAIN-SUFFIX,epro.sogou.com
 DOMAIN-SUFFIX,eq.10jqka.com.cn
 DOMAIN-SUFFIX,ereg.wip3.adobe.com
+DOMAIN-SUFFIX,errlogos.umeng.com
 DOMAIN-SUFFIX,etl-xlmc-ssl.sandai.net
 DOMAIN-SUFFIX,everesttech.net
 DOMAIN-SUFFIX,f10.baidu.com
@@ -191,6 +195,7 @@ DOMAIN-SUFFIX,mini.cpc.sogou.com
 DOMAIN-SUFFIX,minipage.2345.cn
 DOMAIN-SUFFIX,miui-fxcse.avlyun.com
 DOMAIN-SUFFIX,mmstat.com
+DOMAIN-SUFFIX,mon11-misc-hl.fqnovel.com
 DOMAIN-SUFFIX,motu.p4p.sina.com.cn
 DOMAIN-SUFFIX,mp4.res.hunantv.com
 DOMAIN-SUFFIX,msg.71.am
@@ -225,6 +230,7 @@ DOMAIN-SUFFIX,plat.videojj.com
 DOMAIN-SUFFIX,porn.to
 DOMAIN-SUFFIX,ps.dev.360.cn
 DOMAIN-SUFFIX,ptcdwm.com
+DOMAIN-SUFFIX,pull-flv-l11.douyincdn.com
 DOMAIN-SUFFIX,pv.alert.autohome.com.cn
 DOMAIN-SUFFIX,pv.hd.sohu.com
 DOMAIN-SUFFIX,pv.sohu.com
@@ -343,6 +349,8 @@ DOMAIN,is.snssdk.com
 DOMAIN,mercury.jd.com
 DOMAIN,sf3-ttcdn-tos.pstatp.com
 IP-CIDR,124.222.170.76/32,no-resolve
+PROCESS-NAME,com.miui.guardprovider
+PROCESS-NAME,com.miui.packageinstaller
 PROCESS-NAME,PixPin.exe
 PROCESS-NAME,SogouInput
 PROCESS-NAME,SogouServices
