@@ -1,6 +1,5 @@
 payload:
   - AND,((DOMAIN-SUFFIX,biliapi.net),(DOMAIN-KEYWORD,pcdn))
-  - DOMAIN-KEYWORD,analysis
   - DOMAIN-KEYWORD,applog-hl.fqnovel.com
   - DOMAIN-KEYWORD,googleads
   - DOMAIN-KEYWORD,omgmtaw
