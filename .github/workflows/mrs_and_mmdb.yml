@@ -100,7 +100,7 @@ jobs:
         # 1. 生成原始 geosite.list，排除指定关键词（修正了 grep -E）
         curl -sSL https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/refs/heads/master/accelerated-domains.china.conf \
           | grep '^server=' \
-          | grep -vE '\.microsoft\.com|pikpak|deepseek|\.top|\.wang' \
+          | grep -vE '\.microsoft\.com|pikpak|deepseek|\.top|\.wang|\.bigolive\.tv|\.imolive\.tv' \
           | sed 's/^server=\/\([^\/]*\)\/.*/DOMAIN-SUFFIX,\1/' \
           > geosite.list
 
