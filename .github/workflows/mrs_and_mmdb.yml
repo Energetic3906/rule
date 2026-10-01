@@ -124,6 +124,7 @@ jobs:
         # ============================================================
         EXCLUDE_PATTERNS = [
             ".microsoft.com",
+            ".adobe.com",
             "pikpak",
             "deepseek",
             ".top",
