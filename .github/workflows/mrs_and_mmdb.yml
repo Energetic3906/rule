@@ -97,18 +97,17 @@ jobs:
 
     - name: Build geosite.list
       run: |
-        # 1. 生成原始 geosite.list，排除指定关键词（修正了 grep -E）
+        # 1. 生成原始 geosite.list（不再在这里排除关键词，交给 Python 统一处理）
         curl -sSL https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/refs/heads/master/accelerated-domains.china.conf \
           | grep '^server=' \
-          | grep -vE '\.microsoft\.com|pikpak|deepseek|\.top|\.wang|\.bigolive\.tv|\.imolive\.tv' \
           | sed 's/^server=\/\([^\/]*\)\/.*/DOMAIN-SUFFIX,\1/' \
           > geosite.list
 
-        # 2. 下载 Tranco top-1m
+        # 2. 下载 Umbrella top-1m
         curl -sSL http://s3-us-west-1.amazonaws.com/umbrella-static/top-1m.csv.zip -o top-1m.csv.zip
         unzip -o -q top-1m.csv.zip
 
-        # 3. 用 Python 过滤：只保留主域名在 top-1m 中的条目，去重并按排名排序
+        # 3. 用 Python 过滤：排除关键词 + 只保留主域名在 top-1m 中的条目 + 手动域名
         cat > filter_geosite.py << 'PYEOF'
         import csv
         import ipaddress
@@ -119,6 +118,39 @@ jobs:
         TOP1M_FILE = 'top-1m.csv'
         GEOSITE_FILE = 'geosite.list'
         OUTPUT_FILE = 'geosite.list'
+
+        # ============================================================
+        # 要排除的域名/关键词（子串匹配）使用coudfalre https://radar.cloudflare.com/zh-cn/domains 去掉前面的国外访问域名
+        # ============================================================
+        EXCLUDE_PATTERNS = [
+            ".microsoft.com",
+            "pikpak",
+            "deepseek",
+            ".top",
+            ".wang",
+            ".bigolive.tv",
+            ".imolive.tv",
+            ".windowsupdate.com",
+            ".tiktokrow-cdn.com",
+            ".live.com",
+        ]
+
+        # ============================================================
+        # 手动添加的域名/后缀，直接绕过 top-1m 过滤，无条件加入输出
+        # 例如 "cn" 会生成 DOMAIN-SUFFIX,cn，匹配所有 .cn 域名
+        # ============================================================
+        MANUAL_DOMAINS = [
+            "cn",
+            "xn--fiqs8s",   # .中国（简体）
+            "xn--fiqz9s",   # .中國（繁体）
+            "xn--55qx5d",   # .公司
+            "xn--io0a7i",   # .网络
+            "xn--zfr164b",  # .政务
+            "xn--55qw42g",  # .公益
+        ]
+
+        def is_excluded(domain: str) -> bool:
+            return any(p in domain for p in EXCLUDE_PATTERNS)
 
         # 加载 top-1m 排名
         rank = {}
@@ -146,12 +178,18 @@ jobs:
         print(f"Loaded {len(rank)} domains from top-1m.csv")
 
         seen = {}
+        excluded_count = 0
         with open(GEOSITE_FILE, 'r', encoding='utf-8') as f:
             for line in f:
                 line = line.strip()
                 if not line.startswith('DOMAIN-SUFFIX,'):
                     continue
                 domain = line.split(',', 1)[1].strip().lower()
+
+                # 排除关键词
+                if is_excluded(domain):
+                    excluded_count += 1
+                    continue
 
                 # 过滤反向 DNS 和纯 IP
                 if domain.endswith('.in-addr.arpa') or domain.endswith('.ip6.arpa'):
@@ -173,11 +211,26 @@ jobs:
                     if root not in seen:
                         seen[root] = rank[root]
 
-        # 按排名升序输出，只保留主域名
+        # 手动域名统一转小写、去重
+        manual_set = []
+        manual_seen = set()
+        for d in MANUAL_DOMAINS:
+            d = d.strip().lower()
+            if d and d not in manual_seen:
+                manual_seen.add(d)
+                manual_set.append(d)
+
+        # 输出：先写手动域名，再按排名写过滤后的域名
         with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
+            for d in manual_set:
+                f.write(f"DOMAIN-SUFFIX,{d}\n")
             for root in sorted(seen.keys(), key=lambda x: seen[x]):
+                if root in manual_seen:
+                    continue  # 避免与手动域名重复
                 f.write(f"DOMAIN-SUFFIX,{root}\n")
 
+        print(f"Excluded by patterns: {excluded_count}")
+        print(f"Manual domains added: {len(manual_set)}")
         print(f"Filtered and saved {len(seen)} domains to {OUTPUT_FILE}")
         PYEOF
 
