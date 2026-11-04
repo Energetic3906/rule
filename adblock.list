@@ -50,6 +50,7 @@ DOMAIN-SUFFIX,api-iam.intercom.io
 DOMAIN-SUFFIX,api.cpu.baidu.com
 DOMAIN-SUFFIX,api.cupid.iqiyi.com
 DOMAIN-SUFFIX,api.game.letvstore.com
+DOMAIN-SUFFIX,api.installer.xiaomi.com
 DOMAIN-SUFFIX,api.itaoxiaoshuo.com
 DOMAIN-SUFFIX,api.kingdata.ksyun.com
 DOMAIN-SUFFIX,api.mobula.sdk.duapps.com
@@ -86,6 +87,10 @@ DOMAIN-SUFFIX,csi.gstatic.com
 DOMAIN-SUFFIX,cytron.videojj.com
 DOMAIN-SUFFIX,cytroncdn.videojj.com
 DOMAIN-SUFFIX,d.clkservice.youdao.com
+DOMAIN-SUFFIX,data.mistat.india.xiaomi.com
+DOMAIN-SUFFIX,data.mistat.intl.xiaomi.com
+DOMAIN-SUFFIX,data.mistat.rus.xiaomi.com
+DOMAIN-SUFFIX,data.mistat.xiaomi.com
 DOMAIN-SUFFIX,dcw.hdswgc.com
 DOMAIN-SUFFIX,dd713.bj.bcebos.com
 DOMAIN-SUFFIX,demdex.net
@@ -204,6 +209,7 @@ DOMAIN-SUFFIX,mssdk.volces.com
 DOMAIN-SUFFIX,mtrace.qq.com
 DOMAIN-SUFFIX,news.l.qq.com
 DOMAIN-SUFFIX,nl.notice.iqiyi.com
+DOMAIN-SUFFIX,notify.sec.miui.com
 DOMAIN-SUFFIX,noxagile.duapp.com
 DOMAIN-SUFFIX,omgmta1.qq.com
 DOMAIN-SUFFIX,open.kuaishouzt.com
@@ -283,6 +289,7 @@ DOMAIN-SUFFIX,sugar.zhihu.com
 DOMAIN-SUFFIX,sutraf.com
 DOMAIN-SUFFIX,szbdyd.com
 DOMAIN-SUFFIX,t.l.qq.com
+DOMAIN-SUFFIX,t1.market.xiaomi.com
 DOMAIN-SUFFIX,talkingdata.com
 DOMAIN-SUFFIX,talkingdata.net
 DOMAIN-SUFFIX,taps.net
@@ -304,7 +311,9 @@ DOMAIN-SUFFIX,track.hujiang.com
 DOMAIN-SUFFIX,track.uc.cn
 DOMAIN-SUFFIX,tracker.appadhoc.com
 DOMAIN-SUFFIX,tracker.xiaomixiaoai.com
+DOMAIN-SUFFIX,tracking.india.miui.com
 DOMAIN-SUFFIX,tracking.miui.com
+DOMAIN-SUFFIX,tracking.rus.miui.com
 DOMAIN-SUFFIX,tuia.cn
 DOMAIN-SUFFIX,tz.sec.xiaomi.com
 DOMAIN-SUFFIX,ujscdn.com
