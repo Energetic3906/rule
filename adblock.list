@@ -47,6 +47,8 @@ DOMAIN-SUFFIX,analytics.yahoo.com
 DOMAIN-SUFFIX,analyze.lemurbrowser.com
 DOMAIN-SUFFIX,androidgo.duapp.com
 DOMAIN-SUFFIX,api-iam.intercom.io
+DOMAIN-SUFFIX,api-preview.open.ai.xiaomi.com
+DOMAIN-SUFFIX,api-staging.miai.srv
 DOMAIN-SUFFIX,api.cpu.baidu.com
 DOMAIN-SUFFIX,api.cupid.iqiyi.com
 DOMAIN-SUFFIX,api.game.letvstore.com
@@ -171,7 +173,6 @@ DOMAIN-SUFFIX,lives.l.qq.com
 DOMAIN-SUFFIX,livew.l.qq.com
 DOMAIN-SUFFIX,locdrop.query.yahoo.com
 DOMAIN-SUFFIX,log.aliyuncs.com
-DOMAIN-SUFFIX,log.avlyun.sec.intl.miui.com
 DOMAIN-SUFFIX,log.interest.mix.sina.com.cn
 DOMAIN-SUFFIX,log.kuwo.cn
 DOMAIN-SUFFIX,log.mix.sina.com.cn
@@ -233,6 +234,7 @@ DOMAIN-SUFFIX,pixel.wp.com
 DOMAIN-SUFFIX,pkoplink.com
 DOMAIN-SUFFIX,plat.videojj.com
 DOMAIN-SUFFIX,porn.to
+DOMAIN-SUFFIX,preview-api-middle.transfer.sec.miui.com
 DOMAIN-SUFFIX,ps.dev.360.cn
 DOMAIN-SUFFIX,ptcdwm.com
 DOMAIN-SUFFIX,pv.alert.autohome.com.cn
@@ -278,6 +280,9 @@ DOMAIN-SUFFIX,singular.net
 DOMAIN-SUFFIX,song.fanxing.kugou.com
 DOMAIN-SUFFIX,spider-tracker.xiaohongshu.com
 DOMAIN-SUFFIX,stadig.ifeng.com
+DOMAIN-SUFFIX,staging-api-middle.transfer.sec.miui.com
+DOMAIN-SUFFIX,staging-api.transfer.sec.miui.com
+DOMAIN-SUFFIX,staging.api.transfer.search.miui.srv
 DOMAIN-SUFFIX,stat.ws.126.net
 DOMAIN-SUFFIX,static.ts.360.com
 DOMAIN-SUFFIX,staticadm.leju.sina.com.cn
@@ -296,7 +301,9 @@ DOMAIN-SUFFIX,taps.net
 DOMAIN-SUFFIX,tf.360.cn
 DOMAIN-SUFFIX,tg.jifen.2345.com
 DOMAIN-SUFFIX,tmfsdk.m.qq.com
+DOMAIN-SUFFIX,tmfsdk4.m.qq.com
 DOMAIN-SUFFIX,tmfsdktcp.m.qq.com
+DOMAIN-SUFFIX,tmfsdktcpv4.m.qq.com
 DOMAIN-SUFFIX,tnc3-aliec2.zijieapi.com
 DOMAIN-SUFFIX,tnc3-alisc1.zijieapi.com
 DOMAIN-SUFFIX,tnc3-bjlgy.zijieapi.com
@@ -357,9 +364,14 @@ DOMAIN-SUFFIX,zzy1.quyaoya.com
 DOMAIN,is.snssdk.com
 DOMAIN,mercury.jd.com
 DOMAIN,sf3-ttcdn-tos.pstatp.com
+IP-CIDR,120.241.190.227/32,no-resolve
 IP-CIDR,124.222.170.76/32,no-resolve
+IP-CIDR,14.18.175.81/32,no-resolve
+IP-CIDR,61.241.44.59/32,no-resolve
 PROCESS-NAME,com.miui.guardprovider
 PROCESS-NAME,com.miui.packageinstaller
+PROCESS-NAME,com.mobiletools.systemhelper
+PROCESS-NAME,com.mobiletools.systemhelper:remote
 PROCESS-NAME,SogouInput
 PROCESS-NAME,SogouServices
 PROCESS-NAME,SogouTaskManager
