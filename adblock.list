@@ -22,6 +22,7 @@ DOMAIN-SUFFIX,admarvel.com
 DOMAIN-SUFFIX,ads-api.videojj.com
 DOMAIN-SUFFIX,ads.bssdl.kugou.com
 DOMAIN-SUFFIX,ads.linkedin.com
+DOMAIN-SUFFIX,ads.openai.com
 DOMAIN-SUFFIX,ads.yahoo.com
 DOMAIN-SUFFIX,ads5-normal-hl.zijieapi.com
 DOMAIN-SUFFIX,adsame.com
@@ -56,6 +57,7 @@ DOMAIN-SUFFIX,api.installer.xiaomi.com
 DOMAIN-SUFFIX,api.itaoxiaoshuo.com
 DOMAIN-SUFFIX,api.kingdata.ksyun.com
 DOMAIN-SUFFIX,api.mobula.sdk.duapps.com
+DOMAIN-SUFFIX,api.segment.io
 DOMAIN-SUFFIX,api.statsig.com
 DOMAIN-SUFFIX,api.tuisong.baidu.com
 DOMAIN-SUFFIX,apk.shouji.koowo.com
@@ -70,6 +72,7 @@ DOMAIN-SUFFIX,beacon.sina.com.cn
 DOMAIN-SUFFIX,beacon.tingyun.com
 DOMAIN-SUFFIX,beap-bc.yahoo.com
 DOMAIN-SUFFIX,byteorge.com
+DOMAIN-SUFFIX,bzr.openai.com
 DOMAIN-SUFFIX,c.biz.weibo.com
 DOMAIN-SUFFIX,c.l.qq.com
 DOMAIN-SUFFIX,c.wcpt.biz.weibo.com
@@ -77,6 +80,7 @@ DOMAIN-SUFFIX,canstrm.com
 DOMAIN-SUFFIX,capndr.com
 DOMAIN-SUFFIX,ccc.sys.miui.com
 DOMAIN-SUFFIX,cdn.livechatinc.com
+DOMAIN-SUFFIX,cdn.segment.com
 DOMAIN-SUFFIX,cdn.ynuf.aliapp.org
 DOMAIN-SUFFIX,cdn.zampdsp.com
 DOMAIN-SUFFIX,channel.fanxing.kugou.com
@@ -93,6 +97,7 @@ DOMAIN-SUFFIX,data.mistat.india.xiaomi.com
 DOMAIN-SUFFIX,data.mistat.intl.xiaomi.com
 DOMAIN-SUFFIX,data.mistat.rus.xiaomi.com
 DOMAIN-SUFFIX,data.mistat.xiaomi.com
+DOMAIN-SUFFIX,datadoghq.com
 DOMAIN-SUFFIX,dcw.hdswgc.com
 DOMAIN-SUFFIX,dd713.bj.bcebos.com
 DOMAIN-SUFFIX,demdex.net
